@@ -1,0 +1,176 @@
+@import "tailwindcss";
+
+/* Color palette
+| Token        | Hex     | Use                    |
+|--------------|---------|------------------------|
+| parchment    | #f5ede0 | Main background        |
+| maroon       | #7b1d1d | Primary brand          |
+| gold         | #c9933a | Accent, borders        |
+| teal-deep    | #1e4a4a | Saṅgam accent          |
+| ink          | #1a1209 | Body text              |
+| cream        | #fdf6ed | Card backgrounds       |
+*/
+
+@theme {
+  --color-parchment: #f5ede0;
+  --color-parchment-dark: #ebe3d4;
+  --color-maroon: #7b1d1d;
+  --color-maroon-deep: #5c1616;
+  --color-gold: #c9933a;
+  --color-gold-light: #dbad5c;
+  --color-teal-deep: #1e4a4a;
+  --color-ink: #1a1209;
+  --color-cream: #fdf6ed;
+  /* Derived — muted text & UI chrome */
+  --color-muted: #5c5046;
+  --color-muted-light: #8a7d72;
+
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-sanskrit: "Tiro Devanagari Sanskrit", "Noto Serif Devanagari", serif;
+  --font-body: "Source Serif 4", Georgia, serif;
+  --font-ui: "Inter", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-parchment text-ink antialiased;
+    font-family: var(--font-body);
+    background-image:
+      url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  }
+
+  ::selection {
+    @apply bg-maroon/20 text-maroon-deep;
+  }
+}
+
+@layer components {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-sanskrit {
+    font-family: var(--font-sanskrit);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  .font-ui {
+    font-family: var(--font-ui);
+  }
+
+  .iast {
+    font-family: var(--font-sanskrit);
+    font-style: normal;
+    letter-spacing: 0.02em;
+  }
+
+  .section-label {
+    @apply font-ui text-[0.65rem] uppercase tracking-[0.35em] text-muted-light;
+  }
+
+  .kalamkari-border {
+    border: 1px solid color-mix(in srgb, var(--color-gold) 40%, transparent);
+    box-shadow:
+      inset 0 0 0 1px color-mix(in srgb, var(--color-gold) 20%, transparent),
+      0 4px 24px -8px color-mix(in srgb, var(--color-maroon) 10%, transparent);
+  }
+
+  .manuscript-card {
+    border: 1px solid color-mix(in srgb, var(--color-gold) 40%, transparent);
+    box-shadow:
+      inset 0 0 0 1px color-mix(in srgb, var(--color-gold) 20%, transparent),
+      0 4px 24px -8px color-mix(in srgb, var(--color-maroon) 10%, transparent);
+    @apply bg-cream/90 backdrop-blur-sm;
+  }
+
+  .manuscript-card--sangam {
+    border-color: color-mix(in srgb, var(--color-teal-deep) 35%, transparent);
+    box-shadow:
+      inset 0 0 0 1px color-mix(in srgb, var(--color-teal-deep) 15%, transparent),
+      0 4px 24px -8px color-mix(in srgb, var(--color-teal-deep) 8%, transparent);
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm border border-maroon/30 bg-maroon px-6 py-2.5 font-ui text-sm tracking-wide text-parchment transition-all duration-300 hover:bg-maroon-deep hover:shadow-lg;
+  }
+
+  .btn-primary--teal {
+    @apply border-teal-deep/30 bg-teal-deep hover:bg-teal-deep/90;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm border border-muted/25 bg-transparent px-6 py-2.5 font-ui text-sm tracking-wide text-muted transition-all duration-300 hover:border-maroon/40 hover:text-maroon;
+  }
+
+  .link-underline {
+    @apply relative inline-block text-maroon transition-colors hover:text-maroon-deep;
+  }
+
+  .link-underline::after {
+    content: "";
+    @apply absolute -bottom-0.5 left-0 h-px w-0 bg-maroon transition-all duration-300;
+  }
+
+  .link-underline:hover::after {
+    @apply w-full;
+  }
+
+  .ornament-divider {
+    @apply relative my-16 flex items-center justify-center gap-4;
+  }
+
+  .ornament-divider::before,
+  .ornament-divider::after {
+    content: "";
+    @apply h-px flex-1 max-w-32 bg-gradient-to-r from-transparent via-gold/50 to-transparent;
+  }
+
+  .hero-gradient {
+    background:
+      radial-gradient(ellipse 80% 60% at 50% 0%, color-mix(in srgb, var(--color-gold) 10%, transparent), transparent),
+      radial-gradient(ellipse 60% 40% at 80% 100%, color-mix(in srgb, var(--color-teal-deep) 6%, transparent), transparent);
+  }
+
+  .fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .prose-indic {
+    @apply text-muted leading-relaxed;
+  }
+
+  .prose-indic h2 {
+    @apply font-display text-3xl text-maroon-deep mt-10 mb-4;
+  }
+
+  .prose-indic p {
+    @apply mb-4;
+  }
+
+  /* Back-compat aliases: stone → muted */
+  .text-stone {
+    color: var(--color-muted);
+  }
+
+  .text-stone-light {
+    color: var(--color-muted-light);
+  }
+}

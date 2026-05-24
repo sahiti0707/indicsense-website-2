@@ -1,0 +1,29 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import NityaKarmaCard from "../components/NityaKarmaCard.astro";
+import nityaKarma from "../data/nitya-karma.json";
+
+const sorted = [...nityaKarma].sort(
+  (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+);
+---
+
+<BaseLayout title="Nitya Karma" description="Daily reflections, tithis, and spiritual campus observances from IndicSense.">
+  <section class="mx-auto max-w-4xl px-6 py-16 text-center">
+    <p class="section-label">Daily Feed</p>
+    <h1 class="font-display text-5xl text-maroon-deep mt-2">Nitya Karma</h1>
+    <p class="mt-4 font-sanskrit text-lg text-stone iast">nityaṃ karma kurvanti ye</p>
+    <p class="mt-2 text-stone max-w-xl mx-auto">
+      A contemplative stream of observances, reflections, and campus dharmic life — updated as the club shares.
+    </p>
+    <a href="/calendar" class="mt-6 inline-block link-underline font-ui text-sm">
+      View Pañcāṅga Calendar →
+    </a>
+  </section>
+
+  <section class="mx-auto max-w-3xl px-6 pb-32 space-y-8">
+    {sorted.map((post) => (
+      <NityaKarmaCard {...post} />
+    ))}
+  </section>
+</BaseLayout>

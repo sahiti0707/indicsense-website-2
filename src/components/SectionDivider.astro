@@ -1,0 +1,11 @@
+---
+interface Props {
+  label?: string;
+}
+
+const { label } = Astro.props;
+---
+
+<div class="ornament-divider">
+  {label && <span class="section-label px-4">{label}</span>}
+</div>

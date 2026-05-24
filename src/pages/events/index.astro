@@ -1,0 +1,42 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import events from "../../data/events.json";
+
+const eventList = [events.samagam, events.sangam, events.virasat];
+---
+
+<BaseLayout title="Events" description="Samāgam, Saṅgam, and Vīrasat — IndicSense gatherings at IIITDM Kancheepuram.">
+  <section class="mx-auto max-w-7xl px-6 py-16 text-center">
+    <p class="section-label">Gatherings</p>
+    <h1 class="font-display text-5xl text-maroon-deep mt-2">Events</h1>
+    <p class="mt-4 text-stone max-w-xl mx-auto">
+      Three streams of IndicSense life — the grand convergence, intimate circles, and living heritage.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-7xl px-6 pb-32 space-y-16">
+    {eventList.map((event) => (
+      <a
+        href={`/events/${event.slug}`}
+        class="manuscript-card group flex flex-col lg:flex-row overflow-hidden"
+      >
+        <div class="lg:w-2/5 aspect-[4/3] lg:aspect-auto overflow-hidden">
+          <img
+            src={event.heroImage}
+            alt={event.title}
+            class="w-full h-full object-cover min-h-[240px] transition-transform duration-500 group-hover:scale-105"
+          />
+        </div>
+        <div class="lg:w-3/5 p-8 md:p-12 flex flex-col justify-center">
+          <p class="section-label">{event.subtitle}</p>
+          <h2 class="font-display text-4xl text-maroon-deep mt-1">{event.title}</h2>
+          <p class="font-sanskrit text-sm text-stone mt-1 iast">{event.sanskrit}</p>
+          <p class="mt-4 text-stone">{event.description}</p>
+          <p class="mt-6 font-ui text-sm text-maroon group-hover:underline">
+            Explore {event.title} →
+          </p>
+        </div>
+      </a>
+    ))}
+  </section>
+</BaseLayout>

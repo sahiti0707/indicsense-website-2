@@ -1,0 +1,26 @@
+[
+  {
+    "platform": "Instagram",
+    "url": "https://instagram.com/indicsense",
+    "handle": "@indicsense",
+    "icon": "instagram"
+  },
+  {
+    "platform": "YouTube",
+    "url": "https://youtube.com/@indicsense",
+    "handle": "IndicSense",
+    "icon": "youtube"
+  },
+  {
+    "platform": "Medium",
+    "url": "https://medium.com/@indicsense",
+    "handle": "Vṛttāntam",
+    "icon": "medium"
+  },
+  {
+    "platform": "LinkedIn",
+    "url": "https://linkedin.com/company/indicsense",
+    "handle": "IndicSense",
+    "icon": "linkedin"
+  }
+]

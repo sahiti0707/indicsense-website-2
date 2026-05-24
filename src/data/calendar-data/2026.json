@@ -1,0 +1,62 @@
+{
+  "yearLabel": "2026–2027 (Ugadi to Ugadi)",
+  "startNote": "Placeholder calendar — replace with your spreadsheet data when ready.",
+  "entries": [
+    {
+      "date": "2026-03-30",
+      "festival": "Ugadi",
+      "tithi": "Śukla Pratipadā",
+      "nakshatra": "Aśvinī",
+      "type": "festival",
+      "note": "New Year — beginning of calendar cycle"
+    },
+    {
+      "date": "2026-04-06",
+      "festival": "Rāma Navamī",
+      "tithi": "Śukla Navamī",
+      "nakshatra": "",
+      "type": "festival",
+      "note": ""
+    },
+    {
+      "date": "2026-04-14",
+      "festival": "Puthandu / Vishu",
+      "tithi": "Śukla Pratipadā",
+      "nakshatra": "",
+      "type": "festival",
+      "note": "Tamil & Malayalam New Year"
+    },
+    {
+      "date": "2026-08-15",
+      "festival": "Independence Day",
+      "tithi": "",
+      "nakshatra": "",
+      "type": "national",
+      "note": ""
+    },
+    {
+      "date": "2026-08-28",
+      "festival": "Janmāṣṭamī",
+      "tithi": "Kṛṣṇa Aṣṭamī",
+      "nakshatra": "Rohiṇī",
+      "type": "festival",
+      "note": ""
+    },
+    {
+      "date": "2026-10-20",
+      "festival": "Dīpāvalī",
+      "tithi": "Amāvasyā",
+      "nakshatra": "",
+      "type": "festival",
+      "note": "Approximate — verify with panchāṅga"
+    },
+    {
+      "date": "2027-03-19",
+      "festival": "Ugadi (next cycle)",
+      "tithi": "Śukla Pratipadā",
+      "nakshatra": "",
+      "type": "festival",
+      "note": "End of annual cycle"
+    }
+  ]
+}

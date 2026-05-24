@@ -1,0 +1,19 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PhotoGallery from "../components/react/PhotoGallery";
+import gallery from "../data/gallery.json";
+---
+
+<BaseLayout title="Gallery" description="Moments from IndicSense — workshops, yātrās, festivals, and cultural events.">
+  <section class="mx-auto max-w-7xl px-6 py-16 text-center">
+    <p class="section-label">Visual Chronicle</p>
+    <h1 class="font-display text-5xl text-maroon-deep mt-2">Gallery</h1>
+    <p class="mt-4 text-stone max-w-xl mx-auto">
+      Workshops, temple visits, Gītā sessions, Virasat, Samāgam — replace placeholder images with your club photos.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-7xl px-6 pb-32">
+    <PhotoGallery client:load images={gallery} />
+  </section>
+</BaseLayout>

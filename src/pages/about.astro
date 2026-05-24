@@ -1,0 +1,49 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SectionDivider from "../components/SectionDivider.astro";
+import site from "../data/site.json";
+import socials from "../data/socials.json";
+---
+
+<BaseLayout title="About" description="About IndicSense — the cultural-intellectual society at IIITDM Kancheepuram.">
+  <section class="mx-auto max-w-4xl px-6 py-16 text-center">
+    <img
+      src="/images/logos/logo-light.png"
+      alt="IndicSense"
+      class="mx-auto h-24 w-24 mb-8"
+    />
+    <h1 class="font-display text-5xl text-maroon-deep">About IndicSense</h1>
+    <p class="font-sanskrit text-xl text-stone mt-4 iast">{site.taglineSanskrit}</p>
+    <p class="mt-6 text-lg text-stone italic">{site.tagline}</p>
+  </section>
+
+  <section class="mx-auto max-w-3xl px-6 pb-16 prose-indic">
+    <p>
+      IndicSense is the cultural-intellectual society at {site.institution}. We exist at the intersection of civilizational inquiry, artistic tradition, and contemporary campus life — a modern digital gurukulam where students explore Dharma, Itihāsa, philosophy, languages, and living heritage without pretension or preachiness.
+    </p>
+    <p>
+      Through <strong>Vṛttāntam</strong>, our article series on Medium, we publish serious writing on topics from GI-tagged crafts to philosophy. Through <strong>Nitya Karma</strong>, we share daily reflections tied to tithis and campus observances. Through <strong>Samāgam</strong>, <strong>Saṅgam</strong>, and <strong>Vīrasat</strong>, we gather, discuss, and celebrate.
+    </p>
+    <p>
+      We are aligned with SPIC MACAY's vision of cultural education and draw inspiration from Kalamkari, Pattachitra, temple architecture, and the intellectual traditions of Bhārat.
+    </p>
+  </section>
+
+  <SectionDivider label="connect" />
+
+  <section class="mx-auto max-w-2xl px-6 pb-32 text-center">
+    <h2 class="font-display text-3xl text-maroon-deep mb-8">Join the Conversation</h2>
+    <div class="flex flex-wrap justify-center gap-4">
+      {socials.map((s) => (
+        <a
+          href={s.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-ghost"
+        >
+          {s.platform}
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

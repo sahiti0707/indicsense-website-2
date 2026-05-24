@@ -1,0 +1,79 @@
+---
+import socials from "../data/socials.json";
+import site from "../data/site.json";
+
+const year = new Date().getFullYear();
+---
+
+<footer class="border-t border-stone/15 bg-parchment-dark/40 mt-24">
+  <div class="ornament-divider px-6">
+    <span class="font-sanskrit text-gold text-lg iast">॥ śubham ॥</span>
+  </div>
+
+  <div class="mx-auto max-w-7xl px-6 pb-16">
+    <div class="grid gap-12 md:grid-cols-3">
+      <div>
+        <img
+          src="/images/logos/logo-light.png"
+          alt="IndicSense"
+          class="h-14 w-14 mb-4"
+        />
+        <p class="font-display text-2xl text-maroon-deep">{site.name}</p>
+        <p class="mt-2 font-ui text-xs tracking-wider text-stone-light uppercase">
+          {site.institution}
+        </p>
+        <p class="mt-4 text-sm text-stone prose-indic max-w-xs">
+          {site.description}
+        </p>
+      </div>
+
+      <div>
+        <p class="section-label mb-4">Explore</p>
+        <ul class="space-y-2 font-ui text-sm text-stone">
+          <li><a href="/nitya-karma" class="link-underline">Nitya Karma</a></li>
+          <li><a href="/calendar" class="link-underline">Pañcāṅga Calendar</a></li>
+          <li><a href="/vrittantam" class="link-underline">Vṛttāntam Articles</a></li>
+          <li><a href="/events" class="link-underline">Events</a></li>
+          <li><a href="/gallery" class="link-underline">Gallery</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="section-label mb-4">Connect</p>
+        <ul class="space-y-3">
+          {socials.map((s) => (
+            <li>
+              <a
+                href={s.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="font-ui text-sm text-stone hover:text-maroon transition-colors flex items-center gap-2"
+              >
+                <span class="text-maroon/60">→</span>
+                {s.platform}
+                <span class="text-stone-light text-xs">({s.handle})</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+        <a
+          href={site.spicmacayConventionUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mt-6 inline-block btn-ghost text-xs"
+        >
+          SPIC MACAY Convention →
+        </a>
+      </div>
+    </div>
+
+    <div class="mt-16 pt-8 border-t border-stone/10 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <p class="font-ui text-xs text-stone-light">
+        © {year} IndicSense · IIITDM Kancheepuram
+      </p>
+      <p class="font-sanskrit text-sm text-stone-light iast">
+        {site.taglineSanskrit}
+      </p>
+    </div>
+  </div>
+</footer>

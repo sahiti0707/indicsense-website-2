@@ -1,0 +1,45 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ArticleCard from "../components/ArticleCard.astro";
+import site from "../data/site.json";
+import { fetchMediumArticles } from "../lib/medium";
+
+const articles = await fetchMediumArticles(24);
+---
+
+<BaseLayout title="Vṛttāntam" description="Intellectual articles from IndicSense — Dharma, Itihāsa, philosophy, arts, and more.">
+  <section class="relative py-24 overflow-hidden">
+    <div class="absolute inset-0 opacity-[0.06]" style="background-image: url('/images/inspo/WhatsApp Image 2026-05-24 at 11.54.44-937a119a-2423-42ef-b2d9-8d3e46e118e7.png'); background-size: cover; background-position: center;"></div>
+    <div class="relative mx-auto max-w-4xl px-6 text-center">
+      <p class="section-label">Intellectual Archive</p>
+      <h1 class="font-display text-5xl md:text-6xl text-maroon-deep mt-2">Vṛttāntam</h1>
+      <p class="font-sanskrit text-xl text-stone mt-4 iast">vṛttāntam — the chronicle</p>
+      <p class="mt-6 text-stone max-w-2xl mx-auto">
+        Serious writing on civilizational inquiry. New articles are published on Medium and appear here automatically.
+      </p>
+      <a
+        href={site.mediumUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="mt-8 inline-block btn-primary"
+      >
+        Follow on Medium →
+      </a>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-7xl px-6 pb-32">
+    {articles.length > 0 ? (
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        {articles.map((article) => (
+          <ArticleCard {...article} />
+        ))}
+      </div>
+    ) : (
+      <div class="text-center py-20 manuscript-card">
+        <p class="text-stone mb-4">Could not load articles from Medium right now.</p>
+        <a href={site.mediumUrl} class="btn-primary">Visit Vṛttāntam on Medium</a>
+      </div>
+    )}
+  </section>
+</BaseLayout>

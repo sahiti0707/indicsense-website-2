@@ -1,0 +1,46 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import mentors from "../data/mentors.json";
+import site from "../data/site.json";
+---
+
+<BaseLayout title="Mentors" description="Words from our acharyas — faculty mentors and their guidance for IndicSense.">
+  <section class="mx-auto max-w-4xl px-6 py-16 text-center">
+    <p class="section-label">Guidance</p>
+    <h1 class="font-display text-5xl text-maroon-deep mt-2">Mentors & Acharyas</h1>
+    <p class="mt-4 text-stone max-w-xl mx-auto">
+      Reverential but warm — experiences and excerpts, including from Vṛttāntam where applicable.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-3xl px-6 pb-32 space-y-12">
+    {mentors.map((mentor) => (
+      <article class="manuscript-card p-8 md:p-12">
+        <div class="flex flex-col md:flex-row gap-8">
+          <div class="w-24 h-24 shrink-0 rounded-full bg-parchment-dark border border-gold/20 flex items-center justify-center mx-auto md:mx-0">
+            {mentor.image ? (
+              <img src={mentor.image} alt={mentor.name} class="w-full h-full rounded-full object-cover" />
+            ) : (
+              <span class="font-sanskrit text-3xl text-maroon/40 iast">गुरु</span>
+            )}
+          </div>
+          <div>
+            <h2 class="font-display text-3xl text-maroon-deep">{mentor.name}</h2>
+            <p class="font-ui text-xs uppercase tracking-wider text-gold mt-1">{mentor.title}</p>
+            <p class="mt-4 text-stone leading-relaxed">{mentor.bio}</p>
+            {mentor.excerpt && (
+              <blockquote class="mt-6 p-4 bg-parchment-dark/50 border-l-2 border-maroon/30 italic text-stone">
+                "{mentor.excerpt}"
+              </blockquote>
+            )}
+            {mentor.vrittantamSlug && (
+              <a href={`${site.mediumUrl}/${mentor.vrittantamSlug}`} class="mt-4 inline-block link-underline font-ui text-sm">
+                Read on Vṛttāntam →
+              </a>
+            )}
+          </div>
+        </div>
+      </article>
+    ))}
+  </section>
+</BaseLayout>

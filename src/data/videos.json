@@ -1,0 +1,26 @@
+[
+  {
+    "id": "v1",
+    "title": "What IndicSense Means to Me",
+    "description": "Members share their journey — from curiosity to community.",
+    "youtubeId": null,
+    "placeholder": true,
+    "category": "experience"
+  },
+  {
+    "id": "v2",
+    "title": "Vīrasat Reflections",
+    "description": "Moments from heritage celebrations and yātrās.",
+    "youtubeId": null,
+    "placeholder": true,
+    "category": "virasat"
+  },
+  {
+    "id": "v3",
+    "title": "Samāgam Highlights",
+    "description": "Highlights from our flagship gathering.",
+    "youtubeId": null,
+    "placeholder": true,
+    "category": "samagam"
+  }
+]

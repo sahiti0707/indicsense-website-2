@@ -1,0 +1,205 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SectionDivider from "../components/SectionDivider.astro";
+import NityaKarmaCard from "../components/NityaKarmaCard.astro";
+import ArticleCard from "../components/ArticleCard.astro";
+import QuoteRotator from "../components/react/QuoteRotator";
+import site from "../data/site.json";
+import quotes from "../data/quotes.json";
+import nityaKarma from "../data/nitya-karma.json";
+import videos from "../data/videos.json";
+import gallery from "../data/gallery.json";
+import { fetchMediumArticles } from "../lib/medium";
+
+const articles = await fetchMediumArticles(3);
+const featuredKarma = nityaKarma.filter((p) => p.featured).slice(0, 2);
+const previewGallery = gallery.slice(0, 4);
+---
+
+<BaseLayout>
+  <!-- Hero -->
+  <section class="relative min-h-[90vh] flex items-center justify-center hero-gradient overflow-hidden">
+    <div class="absolute inset-0 opacity-[0.03]" style="background-image: url('/images/inspo/WhatsApp Image 2026-05-24 at 11.54.43-6b8378db-b0c0-470b-a078-4b4b12ad8426.png'); background-size: 400px;"></div>
+
+    <div class="relative z-10 mx-auto max-w-4xl px-6 text-center fade-in">
+      <img
+        src="/images/logos/logo-light.png"
+        alt="IndicSense"
+        class="mx-auto h-28 w-28 md:h-36 md:w-36 mb-8 drop-shadow-sm"
+      />
+      <p class="section-label mb-4">IIITDM Kancheepuram</p>
+      <h1 class="font-display text-5xl md:text-7xl text-maroon-deep tracking-tight">
+        {site.name}
+      </h1>
+      <p class="mt-4 font-sanskrit text-xl md:text-2xl text-stone iast">
+        {site.taglineSanskrit}
+      </p>
+      <p class="mt-6 font-body text-lg md:text-xl text-stone max-w-xl mx-auto italic">
+        {site.tagline}
+      </p>
+      <div class="mt-10 flex flex-wrap gap-4 justify-center">
+        <a href="/vrittantam" class="btn-primary">Explore Vṛttāntam</a>
+        <a href="/nitya-karma" class="btn-ghost">Nitya Karma</a>
+      </div>
+    </div>
+
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+      <span class="font-ui text-xs text-stone-light tracking-widest">scroll</span>
+    </div>
+  </section>
+
+  <!-- Nitya Karma preview -->
+  <section class="mx-auto max-w-7xl px-6 py-24">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12">
+      <div>
+        <p class="section-label">Daily</p>
+        <h2 class="font-display text-4xl text-maroon-deep">Nitya Karma</h2>
+        <p class="mt-2 text-stone max-w-lg">
+          A spiritual daily feed — reflections, tithis, and campus observances. Not Instagram. Something slower.
+        </p>
+      </div>
+      <a href="/nitya-karma" class="link-underline font-ui text-sm shrink-0">View all →</a>
+    </div>
+    <div class="grid gap-6 md:grid-cols-2">
+      {featuredKarma.map((post) => (
+        <NityaKarmaCard {...post} />
+      ))}
+    </div>
+  </section>
+
+  <SectionDivider label="śloka" />
+
+  <!-- Quote -->
+  <section class="mx-auto max-w-4xl px-6 py-16">
+    <QuoteRotator client:visible quotes={quotes} />
+  </section>
+
+  <SectionDivider />
+
+  <!-- Vrittantam featured -->
+  <section class="mx-auto max-w-7xl px-6 py-24">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12">
+      <div>
+        <p class="section-label">Intellectual Archive</p>
+        <h2 class="font-display text-4xl text-maroon-deep">Vṛttāntam</h2>
+        <p class="mt-2 text-stone max-w-lg">
+          Articles on Dharma, Itihāsa, Samskritam, philosophy, arts, and festivals — published on Medium, curated here.
+        </p>
+      </div>
+      <a href="/vrittantam" class="link-underline font-ui text-sm shrink-0">All articles →</a>
+    </div>
+    {articles.length > 0 ? (
+      <div class="grid gap-6 md:grid-cols-3">
+        {articles.map((article) => (
+          <ArticleCard {...article} />
+        ))}
+      </div>
+    ) : (
+      <p class="text-stone text-center py-12">
+        Articles loading from Medium… Visit <a href={site.mediumUrl} class="link-underline">@indicsense</a>
+      </p>
+    )}
+  </section>
+
+  <!-- Events -->
+  <section class="bg-parchment-dark/30 py-24">
+    <div class="mx-auto max-w-7xl px-6">
+      <p class="section-label text-center mb-2">Gatherings</p>
+      <h2 class="font-display text-4xl text-maroon-deep text-center mb-12">Events</h2>
+      <div class="grid gap-6 md:grid-cols-3">
+        <a href="/events/samagam" class="manuscript-card group overflow-hidden block">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="/images/inspo/WhatsApp Image 2026-05-24 at 11.54.44 (2)-4d8c484c-b00a-467f-84cf-2658456a03be.png" alt="Samāgam" class="w-full h-full object-cover transition-transform group-hover:scale-105" />
+          </div>
+          <div class="p-6">
+            <h3 class="font-display text-2xl text-maroon-deep">Samāgam</h3>
+            <p class="text-sm text-stone mt-2">The flagship convergence</p>
+          </div>
+        </a>
+        <a href="/events/sangam" class="manuscript-card manuscript-card--sangam group overflow-hidden block">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="/images/inspo/WhatsApp Image 2026-05-24 at 11.54.44-937a119a-2423-42ef-b2d9-8d3e46e118e7.png" alt="Saṅgam" class="w-full h-full object-cover transition-transform group-hover:scale-105" />
+          </div>
+          <div class="p-6">
+            <h3 class="font-display text-2xl text-teal-deep">Saṅgam</h3>
+            <p class="text-sm text-muted mt-2">Circles of inquiry</p>
+          </div>
+        </a>
+        <a href="/events/virasat" class="manuscript-card group overflow-hidden block">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="/images/inspo/WhatsApp Image 2026-05-24 at 11.54.43 (1)-70fece0d-d6c8-4e6b-9142-d7defe5ea297.png" alt="Vīrasat" class="w-full h-full object-cover transition-transform group-hover:scale-105" />
+          </div>
+          <div class="p-6">
+            <h3 class="font-display text-2xl text-maroon-deep">Vīrasat</h3>
+            <p class="text-sm text-stone mt-2">Living heritage</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPIC MACAY -->
+  <section class="mx-auto max-w-7xl px-6 py-24">
+    <div class="manuscript-card p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
+      <div class="flex-1">
+        <p class="section-label mb-2">Partner Event</p>
+        <h2 class="font-display text-3xl text-maroon-deep">SPIC MACAY Convention</h2>
+        <p class="mt-4 text-stone">
+          IndicSense is aligned with SPIC MACAY's mission of cultural education. Join the national convention for immersive experiences in classical arts and heritage.
+        </p>
+        <a
+          href={site.spicmacayConventionUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mt-6 inline-block btn-primary"
+        >
+          Convention Details →
+        </a>
+      </div>
+      <div class="w-full md:w-48 h-48 rounded-full border border-gold/30 flex items-center justify-center bg-gold/5">
+        <span class="font-sanskrit text-4xl text-gold iast">कला</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Videos -->
+  <section class="bg-ink text-parchment py-24">
+    <div class="mx-auto max-w-7xl px-6">
+      <p class="section-label text-parchment/50 mb-2">Voices</p>
+      <h2 class="font-display text-4xl mb-12">Member Experiences</h2>
+      <div class="grid gap-6 md:grid-cols-3">
+        {videos.map((v) => (
+          <div class="border border-parchment/10 rounded-sm p-6">
+            <div class="aspect-video bg-parchment/5 rounded-sm flex items-center justify-center mb-4">
+              <span class="font-ui text-xs text-parchment/40 uppercase tracking-wider">Video coming soon</span>
+            </div>
+            <h3 class="font-display text-xl">{v.title}</h3>
+            <p class="mt-2 text-sm text-parchment/70">{v.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery preview -->
+  <section class="mx-auto max-w-7xl px-6 py-24">
+    <div class="flex justify-between items-end mb-12">
+      <h2 class="font-display text-4xl text-maroon-deep">Gallery</h2>
+      <a href="/gallery" class="link-underline font-ui text-sm">Full gallery →</a>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      {previewGallery.map((img) => (
+        <div class="manuscript-card overflow-hidden aspect-square">
+          <img src={img.src} alt={img.alt} class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" loading="lazy" />
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="mx-auto max-w-3xl px-6 pb-32 text-center">
+    <p class="font-sanskrit text-2xl text-maroon iast mb-4">saṅgacchadhvaṃ saṃvadadhvaṃ</p>
+    <p class="text-stone italic mb-8">Let us move together, let us speak together.</p>
+    <a href="/about" class="btn-primary">About IndicSense</a>
+  </section>
+</BaseLayout>

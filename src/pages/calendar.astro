@@ -1,0 +1,19 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PanchangCalendar from "../components/react/PanchangCalendar";
+import calendar2026 from "../data/calendar-data/2026.json";
+---
+
+<BaseLayout title="Pañcāṅga Calendar" description="IndicSense festival and tithi calendar — Ugadi to Ugadi cycle.">
+  <section class="mx-auto max-w-6xl px-6 py-16">
+    <div class="text-center mb-12">
+      <p class="section-label">Tithi & Festivals</p>
+      <h1 class="font-display text-5xl text-maroon-deep mt-2">Nitya Karma Calendar</h1>
+      <p class="mt-4 text-stone max-w-2xl mx-auto">
+        A placeholder Panchang-style calendar. Replace <code class="text-sm bg-parchment-dark px-1 rounded">src/data/calendar-data/2026.json</code> with your spreadsheet export when the design is final.
+      </p>
+    </div>
+
+    <PanchangCalendar client:load data={calendar2026} />
+  </section>
+</BaseLayout>

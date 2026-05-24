@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Sevak Name",
+    "role": "President",
+    "interests": "Itihāsa, Sanskrit, classical music",
+    "quote": "dharmo rakṣati rakṣitaḥ",
+    "quoteMeaning": "Dharma protects those who protect it.",
+    "image": null
+  },
+  {
+    "name": "Sevak Name",
+    "role": "Vice President",
+    "interests": "Philosophy, temple architecture, photography",
+    "quote": "vidyā dadāti vinayam",
+    "quoteMeaning": "Knowledge bestows humility.",
+    "image": null
+  },
+  {
+    "name": "Sevak Name",
+    "role": "Editor — Vṛttāntam",
+    "interests": "Writing, GI crafts, cultural journalism",
+    "quote": "anubhūyaiva jānāti",
+    "quoteMeaning": "One knows only by experiencing.",
+    "image": null
+  },
+  {
+    "name": "Sevak Name",
+    "role": "Events Lead",
+    "interests": "Festivals, logistics, community building",
+    "quote": "vasudhaiva kuṭumbakam",
+    "quoteMeaning": "The world is one family.",
+    "image": null
+  }
+]
