@@ -1,4 +1,9 @@
-# IndicSense Website
+<<<<<<< HEAD
+=======
+# indicsense-website-2
+
+>>>>>>> 4c841488f1ca02a53f2a23c9069038e1a5a2299c
+
 
 A modern digital gurukulam for **IndicSense** — the cultural-intellectual society at IIITDM Kancheepuram.
 
