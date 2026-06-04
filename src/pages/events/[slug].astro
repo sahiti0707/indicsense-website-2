@@ -1,0 +1,68 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import events from "../../data/events.json";
+
+export function getStaticPaths() {
+  return [
+    { params: { slug: "samagam" }, props: { event: events.samagam } },
+    { params: { slug: "sangam" }, props: { event: events.sangam } },
+    { params: { slug: "virasat" }, props: { event: events.virasat } },
+  ];
+}
+
+const { event } = Astro.props;
+const isSangam = event.slug === "sangam";
+---
+
+<BaseLayout title={event.title} description={event.description}>
+  <section class="relative min-h-[50vh] flex items-end">
+    <div class="absolute inset-0">
+      <img src={event.heroImage} alt={event.title} class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-t from-parchment via-parchment/60 to-transparent"></div>
+    </div>
+    <div class="relative mx-auto max-w-7xl px-6 py-16 w-full">
+      <p class="section-label">{event.subtitle}</p>
+      <h1 class:list={["font-display text-5xl md:text-6xl", isSangam ? "text-teal-deep" : "text-maroon-deep"]}>{event.title}</h1>
+      <p class="font-sanskrit text-lg text-stone mt-2 iast">{event.sanskrit}</p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-4xl px-6 py-16">
+    <p class="prose-indic text-lg">{event.description}</p>
+
+    <div class="mt-12 manuscript-card p-8">
+      <p class="section-label mb-4">Upcoming</p>
+      <dl class="grid gap-4 sm:grid-cols-3 font-ui text-sm">
+        <div>
+          <dt class="text-stone-light uppercase tracking-wider text-xs">When</dt>
+          <dd class="text-maroon-deep mt-1">{event.upcoming.date}</dd>
+        </div>
+        <div>
+          <dt class="text-stone-light uppercase tracking-wider text-xs">Where</dt>
+          <dd class="text-maroon-deep mt-1">{event.upcoming.venue}</dd>
+        </div>
+        <div>
+          <dt class="text-stone-light uppercase tracking-wider text-xs">Status</dt>
+          <dd class="text-maroon-deep mt-1">{event.upcoming.status}</dd>
+        </div>
+      </dl>
+    </div>
+
+    <div class="mt-12">
+      <p class="section-label mb-4">Highlights</p>
+      <ul class="space-y-3">
+        {event.highlights.map((h) => (
+          <li class="flex gap-3 text-stone">
+            <span class="text-gold shrink-0">◆</span>
+            {h}
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    <div class="mt-16 flex gap-4">
+      <a href="/events" class="btn-ghost">← All Events</a>
+      <a href="/gallery" class="btn-primary">Event Gallery</a>
+    </div>
+  </section>
+</BaseLayout>

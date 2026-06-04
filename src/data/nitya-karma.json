@@ -1,0 +1,46 @@
+[
+  {
+    "id": "nk-001",
+    "title": "Ugadi — New Year Reflection",
+    "date": "2026-03-30",
+    "tithi": "Śukla Pratipadā",
+    "description": "Begin the academic year cycle with intention. Reflect on what civilizational inquiry means in campus life.",
+    "shloka": "āyur deho balam varcaḥ prajñā śrīr balam eva ca",
+    "shlokaMeaning": "May there be long life, health, strength, radiance, wisdom, and prosperity.",
+    "tags": ["festival", "reflection"],
+    "featured": true
+  },
+  {
+    "id": "nk-002",
+    "title": "Gītā Saṃvāda — Weekly Session",
+    "date": "2026-04-05",
+    "tithi": "Śukla Saptamī",
+    "description": "Weekly reading circle on Bhagavad Gītā Chapter 2. Open to all curious minds.",
+    "shloka": "karmany evadhikaras te ma phalesu kadacana",
+    "shlokaMeaning": "You have a right to action alone, never to its fruits.",
+    "tags": ["session", "gita"],
+    "featured": false
+  },
+  {
+    "id": "nk-003",
+    "title": "Rāma Navamī Observance",
+    "date": "2026-04-06",
+    "tithi": "Śukla Navamī",
+    "description": "Commemorate the birth of Śrī Rāma with kīrtana, readings from Rāmāyaṇa, and community prasāda.",
+    "shloka": "rāmo vigrahavān dharmaḥ",
+    "shlokaMeaning": "Rāma is the embodiment of Dharma.",
+    "tags": ["festival", "itihasa"],
+    "featured": true
+  },
+  {
+    "id": "nk-004",
+    "title": "Temple Visit — Mahabalipuram",
+    "date": "2026-04-12",
+    "tithi": "Kṛṣṇa Caturthī",
+    "description": "Guided yātrā to Pallava shore temples. Study iconography and maritime Indic architecture.",
+    "shloka": "deśo deśāntaraṃ yāti jñānaṃ caiva na tiṣṭhati",
+    "shlokaMeaning": "One may travel across lands, yet knowledge does not stay still — it must be sought.",
+    "tags": ["yatra", "architecture"],
+    "featured": false
+  }
+]

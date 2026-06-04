@@ -1,0 +1,59 @@
+{
+  "samagam": {
+    "slug": "samagam",
+    "title": "Samāgam",
+    "subtitle": "The Gathering",
+    "sanskrit": "samāgamana",
+    "description": "Samāgam is IndicSense's flagship convergence — talks, performances, and intellectual exchange where campus meets civilizational depth.",
+    "heroImage": "/images/inspo/WhatsApp Image 2026-05-24 at 11.54.43 (1)-70fece0d-d6c8-4e6b-9142-d7defe5ea297.png",
+    "highlights": [
+      "Keynote lectures on Indic thought",
+      "Student paper presentations",
+      "Classical music and dance showcases",
+      "Panel discussions with scholars"
+    ],
+    "upcoming": {
+      "date": "September 2026",
+      "venue": "IIITDM Kancheepuram",
+      "status": "Planning"
+    }
+  },
+  "sangam": {
+    "slug": "sangam",
+    "title": "Saṅgam",
+    "subtitle": "The Confluence",
+    "sanskrit": "saṅgama",
+    "description": "Saṅgam brings together smaller circles — reading groups, language workshops, and intimate dialogues on philosophy, art, and culture.",
+    "heroImage": "/images/inspo/WhatsApp Image 2026-05-24 at 11.54.44-937a119a-2423-42ef-b2d9-8d3e46e118e7.png",
+    "highlights": [
+      "Sanskrit & Tamil learning circles",
+      "Philosophy reading groups",
+      "Art workshop sessions",
+      "Peer-led discussions"
+    ],
+    "upcoming": {
+      "date": "Monthly",
+      "venue": "Campus Library & Open Spaces",
+      "status": "Ongoing"
+    }
+  },
+  "virasat": {
+    "slug": "virasat",
+    "title": "Vīrasat",
+    "subtitle": "The Heritage",
+    "sanskrit": "vīrasat",
+    "description": "Vīrasat celebrates living heritage — festivals, yātrās, traditional arts, and immersive experiences that connect students to India's civilizational tapestry.",
+    "heroImage": "/images/inspo/WhatsApp Image 2026-05-24 at 11.54.42-f23500bc-8654-46b9-97d3-1bb625e911b4.png",
+    "highlights": [
+      "Festival celebrations on campus",
+      "Heritage yātrās and temple visits",
+      "Traditional art demonstrations",
+      "GI tags & crafts exhibitions"
+    ],
+    "upcoming": {
+      "date": "Throughout the year",
+      "venue": "Campus & Heritage Sites",
+      "status": "Ongoing"
+    }
+  }
+}
