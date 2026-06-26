@@ -15,5 +15,10 @@
     "date": "Monthly",
     "venue": "Campus Library & Open Spaces",
     "status": "Ongoing"
-  }
+  },
+  "isSangam": true,
+  "isRegistrationOpen": false,
+  "registrationFormUrl": "",
+  "isGuidelinesUploaded": false,
+  "guidelinesPdfUrl": ""
 }

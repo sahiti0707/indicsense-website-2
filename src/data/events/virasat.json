@@ -15,5 +15,10 @@
     "date": "Throughout the year",
     "venue": "Campus & Heritage Sites",
     "status": "Ongoing"
-  }
+  },
+  "isSangam": false,
+  "isRegistrationOpen": false,
+  "registrationFormUrl": "",
+  "isGuidelinesUploaded": false,
+  "guidelinesPdfUrl": ""
 }
