@@ -1,12 +1,14 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import events from "../../data/events.json";
+import samagam from "../../data/events/samagam.json";
+import sangam from "../../data/events/sangam.json";
+import virasat from "../../data/events/virasat.json";
 
 export function getStaticPaths() {
   return [
-    { params: { slug: "samagam" }, props: { event: events.samagam } },
-    { params: { slug: "sangam" }, props: { event: events.sangam } },
-    { params: { slug: "virasat" }, props: { event: events.virasat } },
+    { params: { slug: "samagam" }, props: { event: samagam } },
+    { params: { slug: "sangam" }, props: { event: sangam } },
+    { params: { slug: "virasat" }, props: { event: virasat } },
   ];
 }
 
