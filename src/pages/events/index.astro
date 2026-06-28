@@ -1,8 +1,10 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import events from "../../data/events.json";
+import samagam from "../../data/events/samagam.json";
+import sangam from "../../data/events/sangam.json";
+import virasat from "../../data/events/virasat.json";
 
-const eventList = [events.samagam, events.sangam, events.virasat];
+const eventList = [samagam, sangam, virasat];
 ---
 
 <BaseLayout title="Events" description="Samāgam, Saṅgam, and Vīrasat — IndicSense gatherings at IIITDM Kancheepuram.">

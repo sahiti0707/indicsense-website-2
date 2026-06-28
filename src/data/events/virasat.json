@@ -1,0 +1,24 @@
+{
+  "slug": "virasat",
+  "title": "Vīrasat",
+  "subtitle": "The Heritage",
+  "sanskrit": "vīrasat",
+  "description": "Vīrasat celebrates living heritage — festivals, yātrās, traditional arts, and immersive experiences that connect students to India's civilizational tapestry.",
+  "heroImage": "/images/inspo/WhatsApp Image 2026-05-24 at 11.54.42-f23500bc-8654-46b9-97d3-1bb625e911b4.png",
+  "highlights": [
+    "Festival celebrations on campus",
+    "Heritage yātrās and temple visits",
+    "Traditional art demonstrations",
+    "GI tags & crafts exhibitions"
+  ],
+  "upcoming": {
+    "date": "Throughout the year",
+    "venue": "Campus & Heritage Sites",
+    "status": "Ongoing"
+  },
+  "isSangam": false,
+  "isRegistrationOpen": false,
+  "registrationFormUrl": "",
+  "isGuidelinesUploaded": false,
+  "guidelinesPdfUrl": ""
+}
