@@ -8,13 +8,32 @@ interface GalleryImage {
 
 interface Props {
   images: GalleryImage[];
+  initialFilter?: string;
 }
 
-const CATEGORIES = ["all", "yatra", "art", "virasat", "performance", "architecture", "samagam", "workshop"];
+const CATEGORIES = ["all", "yatra", "art", "virasat", "performance", "architecture", "samagam", "workshop" ,"sangam"];
 
-export default function PhotoGallery({ images }: Props) {
-  const [filter, setFilter] = useState("all");
+export default function PhotoGallery({ images, initialFilter = "all" }: Props) {
+  const [filter, setFilter] = useState(initialFilter);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+
+  // Sync filter with URL query param on client-side navigation
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const urlFilter = params.get("filter")?.toLowerCase();
+    if (urlFilter && CATEGORIES.includes(urlFilter) && urlFilter !== filter) {
+      setFilter(urlFilter);
+    }
+  }, []);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const currentFilter = params.get("filter")?.toLowerCase();
+    if (filter !== currentFilter) {
+      params.set("filter", filter);
+      window.history.replaceState({}, "", `${window.location.pathname}?${params.toString()}`);
+    }
+  }, [filter]);
 
   const filtered =
     filter === "all" ? images : images.filter((img) => img.category === filter);

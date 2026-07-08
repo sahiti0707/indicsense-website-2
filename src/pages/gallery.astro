@@ -2,6 +2,11 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PhotoGallery from "../components/react/PhotoGallery";
 import gallery from "../data/gallery.json";
+
+const CATEGORIES = ["all", "yatra", "art", "virasat", "performance", "architecture", "samagam", "workshop","sangam"];
+
+const urlFilter = Astro.url.searchParams.get("filter")?.toLowerCase();
+const initialFilter = urlFilter && CATEGORIES.includes(urlFilter) ? urlFilter : "all";
 ---
 
 <BaseLayout title="Gallery" description="Moments from IndicSense — workshops, yātrās, festivals, and cultural events.">
@@ -14,6 +19,6 @@ import gallery from "../data/gallery.json";
   </section>
 
   <section class="mx-auto max-w-7xl px-6 pb-32">
-    <PhotoGallery client:load images={gallery} />
+    <PhotoGallery client:load images={gallery} initialFilter={initialFilter} />
   </section>
 </BaseLayout>
