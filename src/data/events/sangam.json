@@ -3,18 +3,18 @@
   "title": "Saṅgam",
   "subtitle": "The Confluence",
   "sanskrit": "saṅgama",
-  "description": "Saṅgam brings together smaller circles — reading groups, language workshops, and intimate dialogues on philosophy, art, and culture.",
+  "description": "From the energetic Bhangra of Punjab and the graceful Bihu of Assam to the vibrant Kuchipudi of Andhra Pradesh and the electrifying Powada of Maharashtra, SANGAM brings the spirit of India alive on a single stage.  Where every heartbeat echoes a different culture, yet every soul beats for one nation. Students from across the country proudly represent their states through folk dances, music, ballads, poetry, and traditional art forms.  More than just an event, SANGAM is a celebration of India's rich cultural heritage, that promotes cultural exchange, strengthens national unity, and proves that while we have hundreds of traditions and beliefs, our identity as Indians remains one.",
   "heroImage": "/images/inspo/WhatsApp Image 2026-05-24 at 11.54.44-937a119a-2423-42ef-b2d9-8d3e46e118e7.png",
   "highlights": [
-    "Sanskrit & Tamil learning circles",
-    "Philosophy reading groups",
-    "Art workshop sessions",
-    "Peer-led discussions"
+    "Students from each state represent their culture",
+    "Vibrant folk dances, music, and ballads",
+    "Complete student-led event management",
+    "Celebration of India's rich cultural heritage"
   ],
   "upcoming": {
-    "date": "Monthly",
+    "date": "",
     "venue": "Campus Library & Open Spaces",
-    "status": "Ongoing"
+    "status": ""
   },
   "isSangam": true,
   "isRegistrationOpen": false,

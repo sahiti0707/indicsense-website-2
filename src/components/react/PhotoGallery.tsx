@@ -109,7 +109,7 @@ export default function PhotoGallery({ images, initialFilter = "all" }: Props) {
         ))}
       </div>
 
-      <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
+      <div className="columns-2 md:columns-3 lg:columns-4 gap-3 space-y-3">
         {filtered.map((img, index) => (
           <button
             key={img.src}
@@ -117,11 +117,11 @@ export default function PhotoGallery({ images, initialFilter = "all" }: Props) {
             onClick={() => setLightboxIndex(index)}
             className="block w-full break-inside-avoid group cursor-pointer text-left"
           >
-            <div className="manuscript-card overflow-hidden">
+            <div className="manuscript-card overflow-hidden aspect-square bg-parchment/10">
               <img
                 src={img.src}
                 alt={img.alt}
-                className="w-full object-cover transition-all duration-500 group-hover:scale-[1.02] grayscale group-hover:grayscale-0"
+                className="w-full h-full object-contain transition-all duration-500 group-hover:scale-[1.02] grayscale group-hover:grayscale-0"
                 loading="lazy"
               />
               <p className="px-3 py-2 font-ui text-xs text-stone-light capitalize">

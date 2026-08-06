@@ -3,6 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import SectionDivider from "../components/SectionDivider.astro";
 import site from "../data/site.json";
 import socials from "../data/socials.json";
+import initiatives from "../data/initiatives.json";
 ---
 
 <BaseLayout title="About" description="About IndicSense — the cultural-intellectual society at IIITDM Kancheepuram.">
@@ -27,6 +28,36 @@ import socials from "../data/socials.json";
     <p>
       We are aligned with SPIC MACAY's vision of cultural education and draw inspiration from Kalamkari, Pattachitra, temple architecture, and the intellectual traditions of Bhārat.
     </p>
+  </section>
+
+  <section class="mx-auto max-w-7xl px-6 pb-16">
+    <div class="text-center mb-12">
+      <p class="section-label">Our Initiatives</p>
+      <h2 class="font-display text-4xl text-maroon-deep mt-2">Initiatives We Drive</h2>
+      <p class="mt-4 text-stone max-w-2xl mx-auto">
+        Two initiatives that define our work on campus and beyond.
+      </p>
+    </div>
+    <div class="grid gap-8 sm:grid-cols-2 max-w-3xl mx-auto">
+      {initiatives.map((initiative) => (
+        <a
+          href={initiative.route}
+          class="manuscript-card group overflow-hidden flex flex-col h-full"
+        >
+          <div class="aspect-[4/3] overflow-hidden">
+            <img
+              src={initiative.imagePath}
+              alt={initiative.title}
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
+          <div class="p-6 flex flex-col flex-1 text-center">
+            <p class="section-label mb-2">{initiative.subtitle}</p>
+            <h3 class="font-display text-2xl text-maroon-deep group-hover:text-maroon transition-colors">{initiative.title}</h3>
+          </div>
+        </a>
+      ))}
+    </div>
   </section>
 
   <SectionDivider label="connect" />
