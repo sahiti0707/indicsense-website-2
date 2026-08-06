@@ -68,7 +68,7 @@ const guidelinesPdfUrl = event.guidelinesPdfUrl ?? "";
 
     <div class="mt-16 flex gap-4">
       <a href="/events" class="btn-ghost">← All Events</a>
-      <a href="/gallery" class="btn-primary">Event Gallery</a>
+      <a href={`/gallery?filter=${event.slug}`} class="btn-primary">Event Gallery</a>
       <button id="register-btn" class="btn-primary" data-open={isRegistrationOpen} data-url={registrationFormUrl}>Register Now</button>
       <button id="guidelines-btn" class="btn-primary" data-uploaded={isGuidelinesUploaded} data-url={guidelinesPdfUrl}>Guidelines</button>
     </div>
