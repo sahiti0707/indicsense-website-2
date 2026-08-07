@@ -4,6 +4,7 @@ interface GalleryImage {
   src: string;
   alt: string;
   category: string;
+  year: number;
 }
 
 interface Props {
@@ -37,29 +38,64 @@ export default function PhotoGallery({ images, initialFilter = "all" }: Props) {
 
   const filtered =
     filter === "all" ? images : images.filter((img) => img.category === filter);
-  const lightbox = lightboxIndex === null ? null : filtered[lightboxIndex];
+
+  // Group filtered images by year (newest first), then by category within
+  // each year, so the "all" tab is organized by both dimensions.
+  const groupedByYear = filtered.reduce<Record<number, GalleryImage[]>>(
+    (acc, img) => {
+      (acc[img.year] ??= []).push(img);
+      return acc;
+    },
+    {}
+  );
+  const yearGroups = Object.keys(groupedByYear)
+    .map(Number)
+    .sort((a, b) => b - a)
+    .map((year) => {
+      const images = groupedByYear[year];
+      const byCategory = images.reduce<Record<string, GalleryImage[]>>(
+        (acc, img) => {
+          (acc[img.category] ??= []).push(img);
+          return acc;
+        },
+        {}
+      );
+      const categories = Object.keys(byCategory)
+        .sort(
+          (a, b) =>
+            (CATEGORIES.indexOf(a) === -1 ? Number.MAX_SAFE_INTEGER : CATEGORIES.indexOf(a)) -
+            (CATEGORIES.indexOf(b) === -1 ? Number.MAX_SAFE_INTEGER : CATEGORIES.indexOf(b))
+        )
+        .map((category) => ({ category, images: byCategory[category] }));
+      return { year, categories };
+    });
+  const ordered = yearGroups.flatMap((group) =>
+    group.categories.flatMap((cat) => cat.images)
+  );
+
+  const lightbox = lightboxIndex === null ? null : ordered[lightboxIndex];
 
   const closeLightbox = () => setLightboxIndex(null);
 
   const showPrevious = () => {
     setLightboxIndex((current) => {
-      if (current === null || filtered.length === 0) return current;
-      return (current - 1 + filtered.length) % filtered.length;
+      if (current === null || ordered.length === 0) return current;
+      return (current - 1 + ordered.length) % ordered.length;
     });
   };
 
   const showNext = () => {
     setLightboxIndex((current) => {
-      if (current === null || filtered.length === 0) return current;
-      return (current + 1) % filtered.length;
+      if (current === null || ordered.length === 0) return current;
+      return (current + 1) % ordered.length;
     });
   };
 
   useEffect(() => {
-    if (lightboxIndex !== null && !filtered[lightboxIndex]) {
+    if (lightboxIndex !== null && !ordered[lightboxIndex]) {
       closeLightbox();
     }
-  }, [filtered, lightboxIndex]);
+  }, [ordered, lightboxIndex]);
 
   useEffect(() => {
     if (lightboxIndex === null) return;
@@ -88,7 +124,7 @@ export default function PhotoGallery({ images, initialFilter = "all" }: Props) {
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [filtered.length, lightboxIndex]);
+  }, [ordered.length, lightboxIndex]);
 
   return (
     <>
@@ -109,27 +145,61 @@ export default function PhotoGallery({ images, initialFilter = "all" }: Props) {
         ))}
       </div>
 
-      <div className="columns-2 md:columns-3 lg:columns-4 gap-3 space-y-3">
-        {filtered.map((img, index) => (
-          <button
-            key={img.src}
-            type="button"
-            onClick={() => setLightboxIndex(index)}
-            className="block w-full break-inside-avoid group cursor-pointer text-left"
-          >
-            <div className="manuscript-card overflow-hidden aspect-square bg-parchment/10">
-              <img
-                src={img.src}
-                alt={img.alt}
-                className="w-full h-full object-contain transition-all duration-500 group-hover:scale-[1.02] grayscale group-hover:grayscale-0"
-                loading="lazy"
-              />
-              <p className="px-3 py-2 font-ui text-xs text-stone-light capitalize">
-                {img.category}
-              </p>
+      <div>
+        {yearGroups.map((group, groupIndex) => {
+          let runningIndex = yearGroups
+            .slice(0, groupIndex)
+            .reduce(
+              (acc, g) =>
+                acc + g.categories.reduce((a, c) => a + c.images.length, 0),
+              0
+            );
+          return (
+            <div key={group.year} className="mb-12">
+              <h3 className="font-display text-4xl text-maroon-deep mb-6">
+                {group.year}
+              </h3>
+              {group.categories.map((cat) => {
+                const baseIndex = runningIndex;
+                runningIndex += cat.images.length;
+                return (
+                  <div key={cat.category} className="mb-10">
+                    {group.categories.length > 1 && (
+                      <h4 className="font-display text-2xl text-maroon capitalize mb-4">
+                        {cat.category}
+                      </h4>
+                    )}
+                    <div className="columns-2 md:columns-3 lg:columns-4 gap-3 space-y-3">
+                      {cat.images.map((img, imageIndex) => {
+                        const index = baseIndex + imageIndex;
+                        return (
+                          <button
+                            key={img.src}
+                            type="button"
+                            onClick={() => setLightboxIndex(index)}
+                            className="block w-full break-inside-avoid group cursor-pointer text-left"
+                          >
+                            <div className="manuscript-card overflow-hidden aspect-square bg-parchment/10">
+                              <img
+                                src={img.src}
+                                alt={img.alt}
+                                className="w-full h-full object-contain transition-all duration-500 group-hover:scale-[1.02] grayscale group-hover:grayscale-0"
+                                loading="lazy"
+                              />
+                              <p className="px-3 py-2 font-ui text-xs text-stone-light capitalize">
+                                {img.category}
+                              </p>
+                            </div>
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+                );
+              })}
             </div>
-          </button>
-        ))}
+          );
+        })}
       </div>
 
       {lightbox && (
