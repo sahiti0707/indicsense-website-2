@@ -1,0 +1,51 @@
+---
+interface Props {
+  title: string;
+  link: string;
+  pubDate: string;
+  creator: string;
+  contentSnippet: string;
+  thumbnail?: string;
+}
+
+const { title, link, pubDate, creator, contentSnippet, thumbnail } = Astro.props;
+
+const date = pubDate
+  ? new Date(pubDate).toLocaleDateString("en-IN", {
+      day: "numeric",
+      month: "short",
+      year: "numeric",
+    })
+  : "";
+---
+
+<article class="manuscript-card group overflow-hidden flex flex-col h-full">
+  {thumbnail && (
+    <a href={link} target="_blank" rel="noopener noreferrer" class="block aspect-[16/9] overflow-hidden">
+      <img
+        src={thumbnail}
+        alt=""
+        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+        loading="lazy"
+      />
+    </a>
+  )}
+  <div class="p-6 flex flex-col flex-1">
+    <p class="section-label mb-2">Vṛttāntam</p>
+    <h3 class="font-display text-xl text-maroon-deep group-hover:text-maroon transition-colors">
+      <a href={link} target="_blank" rel="noopener noreferrer">{title}</a>
+    </h3>
+    <p class="mt-2 font-ui text-xs text-stone-light">
+      {creator}{date && ` · ${date}`}
+    </p>
+    <p class="mt-4 text-sm text-stone flex-1 line-clamp-3">{contentSnippet}</p>
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="mt-4 link-underline font-ui text-sm"
+    >
+      Read on Medium →
+    </a>
+  </div>
+</article>

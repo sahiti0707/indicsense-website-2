@@ -1,0 +1,50 @@
+---
+import MobileNav from "./react/MobileNav";
+
+const navLinks = [
+  { href: "/nitya-karma", label: "Nitya Karma" },
+  { href: "/calendar", label: "Calendar" },
+  { href: "/vrittantam", label: "Vṛttāntam" },
+  { href: "/events", label: "Events" },
+  { href: "/gallery", label: "Gallery" },
+  { href: "/team", label: "Sevaks" },
+  { href: "/mentors", label: "Mentors" },
+  { href: "/about", label: "About" },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<header class="fixed top-0 left-0 right-0 z-40 border-b border-stone/10 bg-cream/90 backdrop-blur-md">
+  <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+    <a href="/" class="flex items-center gap-3 group">
+      <img
+        src="/images/logos/logo-light.png"
+        alt="IndicSense"
+        class="h-10 w-10 object-contain transition-transform group-hover:scale-105"
+      />
+      <div class="hidden sm:block">
+        <span class="font-display text-xl text-maroon-deep tracking-wide">IndicSense</span>
+        <span class="block font-ui text-[10px] tracking-[0.25em] text-stone-light uppercase">IIITDM Kancheepuram</span>
+      </div>
+    </a>
+
+    <nav class="hidden md:flex items-center gap-1">
+      {navLinks.map((link) => (
+        <a
+          href={link.href}
+          class:list={[
+            "font-ui text-xs tracking-wide px-3 py-2 rounded-sm transition-colors",
+            currentPath.startsWith(link.href)
+              ? "text-maroon bg-maroon/5"
+              : "text-stone hover:text-maroon",
+          ]}
+        >
+          {link.label}
+        </a>
+      ))}
+    </nav>
+
+    <MobileNav client:load links={navLinks} />
+  </div>
+</header>

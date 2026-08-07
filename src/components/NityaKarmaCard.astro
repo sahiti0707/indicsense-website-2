@@ -1,0 +1,55 @@
+---
+interface Props {
+  title: string;
+  date: string;
+  tithi: string;
+  description: string;
+  shloka: string;
+  shlokaMeaning: string;
+  tags: string[];
+  featured?: boolean;
+}
+
+const { title, date, tithi, description, shloka, shlokaMeaning, tags, featured } = Astro.props;
+
+const formattedDate = new Date(date).toLocaleDateString("en-IN", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+});
+---
+
+<article class:list={["manuscript-card p-6 md:p-8 transition-all hover:shadow-lg", featured && "ring-1 ring-gold/30"]}>
+  <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
+    <div>
+      {featured && (
+        <span class="inline-block mb-2 font-ui text-[10px] uppercase tracking-[0.2em] text-gold">
+          Featured
+        </span>
+      )}
+      <h3 class="font-display text-2xl text-maroon-deep">{title}</h3>
+      <p class="mt-1 font-ui text-xs text-stone-light">
+        {formattedDate}
+        {tithi && <span> · <span class="iast">{tithi}</span></span>}
+      </p>
+    </div>
+    <div class="flex flex-wrap gap-1">
+      {tags.map((tag) => (
+        <span class="rounded-sm border border-stone/15 px-2 py-0.5 font-ui text-[10px] uppercase tracking-wider text-stone-light">
+          {tag}
+        </span>
+      ))}
+    </div>
+  </div>
+
+  <p class="text-stone mb-6">{description}</p>
+
+  {shloka && (
+    <blockquote class="border-l-2 border-gold/50 pl-4 py-1">
+      <p class="font-sanskrit text-lg text-maroon iast">{shloka}</p>
+      {shlokaMeaning && (
+        <p class="mt-2 text-sm text-stone italic">{shlokaMeaning}</p>
+      )}
+    </blockquote>
+  )}
+</article>

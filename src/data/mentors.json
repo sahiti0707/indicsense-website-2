@@ -1,0 +1,35 @@
+[
+  {
+    "id": "mentor-1",
+    "name": "Mentor Name",
+    "image": null,
+    "contribution": "Mentor Mentor",
+    "startYear": 2024,
+    "endYear": 2026,
+    "bio": "A guiding presence for IndicSense, bridging academic rigour with lived cultural wisdom.",
+    "bioUrl": "/mentors/mentor-1",
+    "summary": "Joined as a visiting faculty mentor in 2024, bringing decades of experience in Indic knowledge systems and civilizational studies. Currently shaping the research direction of IndicSense at IIITDM Kancheepuram."
+  },
+  {
+    "id": "mentor-2",
+    "name": "Mentor Name",
+    "image": null,
+    "contribution": "Mentor Mentor",
+    "startYear": 2024,
+    "endYear": 2026,
+    "bio": "A guiding presence for IndicSense, bridging academic rigour with lived cultural wisdom.",
+    "bioUrl": "/mentors/mentor-2",
+    "summary": "Long-standing advisor to the IndicSense initiative, with a focus on integrating traditional pedagogical methods into modern engineering curricula."
+  },
+  {
+    "id": "mentor-3",
+    "name": "Mentor Name",
+    "image": null,
+    "contribution": "Mentor Mentor",
+    "startYear": 2024,
+    "endYear": 2026,
+    "bio": "A guiding presence for IndicSense, bridging academic rigour with lived cultural wisdom.",
+    "bioUrl": "/mentors/mentor-3",
+    "summary": "Contributes expertise in Sanskrit literature and philosophical discourse, guiding students through immersive workshops and campus engagement."
+  }
+]

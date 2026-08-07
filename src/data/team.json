@@ -1,0 +1,122 @@
+[
+  {
+    "category": "Social Media",
+    "tagline": "Sharing IndicSense with the world through thoughtful, creative content.",
+    "sevaks": [
+      {
+        "name": "Kunal Garag",
+        "role": "Core Sevak",
+        "image": "public/images/sevaks/Screenshot 2026-08-07 202916.png",
+        "bio": "Passionate about preserving and sharing Indic knowledge through meaningful initiatives and community engagement."
+      },
+      {
+        "name": "Sevak Name",
+        "role": "Content Creator",
+        "image": null,
+        "bio": "Crafts captions and posts that bring Indic thought into everyday digital life with warmth and clarity."
+      },
+      {
+        "name": "Sevak Name",
+        "role": "Design",
+        "image": null,
+        "bio": "Shapes the visual identity of IndicSense across platforms — where tradition meets clean, modern design."
+      },
+      {
+        "name": "Sevak Name",
+        "role": "Reels & Shorts",
+        "image": null,
+        "bio": "Turns moments from our events into short films that carry the spirit of the campus community."
+      }
+    ]
+  },
+  {
+    "category": "Nitya Karma",
+    "tagline": "Nurturing our daily digital sadhana — reflections, tithis, and campus observances.",
+    "sevaks": [
+      {
+        "name": "Sevak Name",
+        "role": "Core Sevak",
+        "image": null,
+        "bio": "Guides our daily digital sadhana, keeping the rhythm of Nitya Karma steady and sincere."
+      },
+      {
+        "name": "Sevak Name",
+        "role": "Morning Reflections",
+        "image": null,
+        "bio": "Writes the morning reflections that begin each day with dharma and quiet contemplation."
+      },
+      {
+        "name": "Sevak Name",
+        "role": "Tithi & Observances",
+        "image": null,
+        "bio": "Tracks tithis, festivals, and campus observances so the community never misses a sacred day."
+      },
+      {
+        "name": "Sevak Name",
+        "role": "Coordination",
+        "image": null,
+        "bio": "Keeps the daily feed flowing — scheduling, review, and gentle continuity behind the scenes."
+      }
+    ]
+  },
+  {
+    "category": "EBSB",
+    "tagline": "Bridging cultures across Bharat through exchange, workshop, and celebration.",
+    "sevaks": [
+      {
+        "name": "Sevak Name",
+        "role": "Core Sevak",
+        "image": null,
+        "bio": "Leads Ek Bharat Shreshtha Bharat initiatives that celebrate the unity of India's diverse cultures."
+      },
+      {
+        "name": "Sevak Name",
+        "role": "Culture Exchange",
+        "image": null,
+        "bio": "Organizes cultural exchange programs between partner states, sharing art, cuisine, and custom."
+      },
+      {
+        "name": "Sevak Name",
+        "role": "Workshops",
+        "image": null,
+        "bio": "Runs hands-on workshops on traditional arts, crafts, and practices from across Bharat."
+      },
+      {
+        "name": "Sevak Name",
+        "role": "Regional Liaison",
+        "image": null,
+        "bio": "Bridges communities across regions, connecting sevaks and volunteers from every corner of India."
+      }
+    ]
+  },
+  {
+    "category": "Vṛttāntam",
+    "tagline": "Writing, researching, and editing our intellectual archive.",
+    "sevaks": [
+      {
+        "name": "Sevak Name",
+        "role": "Editor",
+        "image": null,
+        "bio": "Edits articles to publication standard, weaving clarity and Indic rigour into every piece."
+      },
+      {
+        "name": "Sevak Name",
+        "role": "Writer",
+        "image": null,
+        "bio": "Covers itihāsa, philosophy, and the arts with fresh eyes and deep respect for sources."
+      },
+      {
+        "name": "Sevak Name",
+        "role": "Research",
+        "image": null,
+        "bio": "Digs into primary sources and scholarship so every claim in Vṛttāntam is sound."
+      },
+      {
+        "name": "Sevak Name",
+        "role": "Design",
+        "image": null,
+        "bio": "Illustrates and lays out articles, giving our intellectual archive a distinctive visual voice."
+      }
+    ]
+  }
+]
