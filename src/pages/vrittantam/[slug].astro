@@ -2,6 +2,7 @@
 import { PortableText } from "astro-portabletext";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { client } from "../../lib/sanity";
+import PortableImage from "../../components/PortableImage.astro";
 
 type Post = {
   slug: string;
@@ -28,7 +29,15 @@ const post = await client.fetch(
   *[_type == "post" && slug.current == $slug][0] {
     title,
     publishedAt,
-    body
+    body[] {
+      ...,
+      _type == "image" => {
+        ...,
+        asset->{
+          url
+        }
+      }
+    }
   }
 `,
   { slug }
@@ -37,6 +46,12 @@ const post = await client.fetch(
 if (!post) {
   throw new Error("Post not found");
 }
+
+const components = {
+  type: {
+    image: PortableImage,
+  },
+};
 ---
 
 <BaseLayout
@@ -55,7 +70,10 @@ if (!post) {
     <hr class="my-8" />
 
     <div class="prose max-w-none mt-8">
-        <PortableText value={post.body} />
+      <PortableText
+        value={post.body}
+        components={components}
+      />
     </div>
   </main>
 </BaseLayout>

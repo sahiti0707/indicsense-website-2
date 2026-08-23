@@ -3,9 +3,10 @@ interface Props {
   title: string;
   slug: string;
   publishedAt: string;
+  imageUrl?: string;
 }
 
-const { title, slug, publishedAt } = Astro.props;
+const { title, slug, publishedAt, imageUrl } = Astro.props;
 
 const date = publishedAt
   ? new Date(publishedAt).toLocaleDateString("en-IN", {
@@ -16,23 +17,35 @@ const date = publishedAt
   : "";
 ---
 
-<article class="manuscript-card p-6 flex flex-col">
-  <p class="section-label mb-2">Vṛttāntam</p>
-
-  <h3 class="font-display text-2xl text-maroon-deep">
+<article class="manuscript-card overflow-hidden flex flex-col">
+  {imageUrl && (
     <a href={`/vrittantam/${slug}`}>
-      {title}
+      <img
+        src={imageUrl}
+        alt={title}
+        class="w-full h-48 object-cover"
+      />
     </a>
-  </h3>
+  )}
 
-  <p class="mt-2 text-sm text-stone-light">
-    {date}
-  </p>
+  <div class="p-6 flex flex-col flex-grow">
+    <p class="section-label mb-2">Vṛttāntam</p>
 
-  <a
-    href={`/vrittantam/${slug}`}
-    class="mt-6 link-underline font-ui text-sm"
-  >
-    Read Article →
-  </a>
+    <h3 class="font-display text-2xl text-maroon-deep">
+      <a href={`/vrittantam/${slug}`}>
+        {title}
+      </a>
+    </h3>
+
+    <p class="mt-2 text-sm text-stone-light">
+      {date}
+    </p>
+
+    <a
+      href={`/vrittantam/${slug}`}
+      class="mt-6 link-underline font-ui text-sm"
+    >
+      Read Article →
+    </a>
+  </div>
 </article>

@@ -9,6 +9,7 @@ interface Article {
   slug: string;
   publishedAt: string;
   body: any;
+  imageUrl?: string;
 }
 
 const articles = await client.fetch<Article[]>(`
@@ -17,7 +18,8 @@ const articles = await client.fetch<Article[]>(`
     title,
     "slug": slug.current,
     publishedAt,
-    body
+    body,
+    "imageUrl": mainImage.asset->url
   }
 `);
 ---
@@ -53,12 +55,12 @@ const articles = await client.fetch<Article[]>(`
     {articles.length > 0 ? (
       <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {articles.map((article) => (
-      <>  <SanityArticleCard
-    title={article.title}
-    slug={article.slug}
-    publishedAt={article.publishedAt}
-  />
-</>
+          <SanityArticleCard
+            title={article.title}
+            slug={article.slug}
+            publishedAt={article.publishedAt}
+            imageUrl={article.imageUrl}
+          />
         ))}
       </div>
     ) : (
