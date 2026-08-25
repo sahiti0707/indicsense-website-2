@@ -1,34 +1,122 @@
 [
   {
-    "name": "Sevak Name",
-    "role": "President",
-    "interests": "Itihāsa, Sanskrit, classical music",
-    "quote": "dharmo rakṣati rakṣitaḥ",
-    "quoteMeaning": "Dharma protects those who protect it.",
-    "image": null
+    "category": "Social Media",
+    "tagline": "Sharing IndicSense with the world through thoughtful, creative content.",
+    "sevaks": [
+      {
+        "name": "KUNAL GARAG",
+        "role": "Core Sevak",
+        "image": "public/images/sevaks/Untitled design (3).png",
+        "bio": "Passionate about preserving and sharing Indic knowledge through meaningful initiatives and community engagement."
+      },
+      {
+        "name": "PRIYADARSHANI SURANSE",
+        "role": "Content Creator",
+        "image": "public/images/sevaks/Untitled design (4).png",
+        "bio": "Crafts captions and posts that bring Indic thought into everyday digital life with warmth and clarity."
+      },
+      {
+        "name": "Rithvik B",
+        "role": "Design",
+        "image": "public/images/sevaks/Untitled design (5).png",
+        "bio": "Shapes the visual identity of IndicSense across platforms — where tradition meets clean, modern design."
+      },
+      {
+        "name": "ANIRUTH AADITYAA B",
+        "role": "Reels & Shorts",
+        "image": "public/images/sevaks/Untitled design (19).png",
+        "bio": "Turns moments from our events into short films that carry the spirit of the campus community."
+      }
+    ]
   },
   {
-    "name": "Sevak Name",
-    "role": "Vice President",
-    "interests": "Philosophy, temple architecture, photography",
-    "quote": "vidyā dadāti vinayam",
-    "quoteMeaning": "Knowledge bestows humility.",
-    "image": null
+    "category": "Nitya Karma",
+    "tagline": "Nurturing our daily digital sadhana — reflections, tithis, and campus observances.",
+    "sevaks": [
+      {
+        "name": "SAHITI A",
+        "role": "Core Sevak",
+        "image": "public/images/sevaks/Untitled design (7).png",
+        "bio": "Guides our daily digital sadhana, keeping the rhythm of Nitya Karma steady and sincere."
+      },
+      {
+        "name": "KARTHIKEYA V K V D",
+        "role": "Morning Reflections",
+        "image": "public/images/sevaks/Untitled design (8).png",
+        "bio": "Writes the morning reflections that begin each day with dharma and quiet contemplation."
+      },
+      {
+        "name": "SRAVYA G",
+        "role": "Tithi & Observances",
+        "image": "public/images/sevaks/Untitled design (9).png",
+        "bio": "Tracks tithis, festivals, and campus observances so the community never misses a sacred day."
+      },
+      {
+        "name": "Sai CHINMAYI B",
+        "role": "Coordination",
+        "image": "public/images/sevaks/Untitled design (6).png",
+        "bio": "Keeps the daily feed flowing — scheduling, review, and gentle continuity behind the scenes."
+      }
+    ]
   },
   {
-    "name": "Sevak Name",
-    "role": "Editor — Vṛttāntam",
-    "interests": "Writing, GI crafts, cultural journalism",
-    "quote": "anubhūyaiva jānāti",
-    "quoteMeaning": "One knows only by experiencing.",
-    "image": null
+    "category": "EBSB",
+    "tagline": "Bridging cultures across Bharat through exchange, workshop, and celebration.",
+    "sevaks": [
+      {
+        "name": "VIKRAM Singh",
+        "role": "Core Sevak",
+        "image": "public/images/sevaks/Untitled design (11).png",
+        "bio": "Leads Ek Bharat Shreshtha Bharat initiatives that celebrate the unity of India's diverse cultures."
+      },
+      {
+        "name": "Pratik HOLGADE",
+        "role": "Culture Exchange",
+        "image": "public/images/sevaks/Untitled design (12).png",
+        "bio": "Organizes cultural exchange programs between partner states, sharing art, cuisine, and custom."
+      },
+      {
+        "name": "utkarsh Manat",
+        "role": "Workshops",
+        "image": "public/images/sevaks/Untitled design (13).png",
+        "bio": "Runs hands-on workshops on traditional arts, crafts, and practices from across Bharat."
+      },
+      {
+        "name": "Pushpavanam Hariharan Dhananjay",
+        "role": "Regional Liaison",
+        "image": "public/images/sevaks/Untitled design (14).png",
+        "bio": "Bridges communities across regions, connecting sevaks and volunteers from every corner of India."
+      }
+    ]
   },
   {
-    "name": "Sevak Name",
-    "role": "Events Lead",
-    "interests": "Festivals, logistics, community building",
-    "quote": "vasudhaiva kuṭumbakam",
-    "quoteMeaning": "The world is one family.",
-    "image": null
+    "category": "Vṛttāntam",
+    "tagline": "Writing, researching, and editing our intellectual archive.",
+    "sevaks": [
+      {
+        "name": "Santhana srinivasan R",
+        "role": "Editor",
+        "image": "public/images/sevaks/Untitled design (15).png",
+        "bio": "Edits articles to publication standard, weaving clarity and Indic rigour into every piece."
+      },
+      {
+        "name": "Siddartha Voleti",
+        "role": "Writer",
+        "image": "public/images/sevaks/Untitled design (16).png",
+        "bio": "Covers itihāsa, philosophy, and the arts with fresh eyes and deep respect for sources."
+      },
+      {
+        "name": "PREETHI ABHIRAMI K",
+        "role": "Research",
+        "image": "public/images/sevaks/Untitled design (17).png",
+        "bio": "Digs into primary sources and scholarship so every claim in Vṛttāntam is sound."
+      },
+      {
+        "name": "Aadithya Narayanan",
+        "role": "Design",
+        "image": "public/images/sevaks/Untitled design (18).png",
+        "bio": "Illustrates and lays out articles, giving our intellectual archive a distinctive visual voice."
+      }
+    ]
   }
 ]
