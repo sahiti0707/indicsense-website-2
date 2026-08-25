@@ -1,0 +1,31 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import initiativesData from "../../data/initiatives.json";
+
+export function getStaticPaths() {
+  return initiativesData.map((initiative) => ({
+    params: { slug: initiative.slug },
+    props: { initiative },
+  }));
+}
+
+const { initiative } = Astro.props;
+---
+
+<BaseLayout title={initiative.title} description={initiative.description}>
+  <section class="relative min-h-[50vh] flex items-end">
+    <div class="absolute inset-0">
+      <img src={initiative.heroImage} alt={initiative.title} class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-t from-parchment via-parchment/60 to-transparent"></div>
+    </div>
+    <div class="relative mx-auto max-w-7xl px-6 py-16 w-full">
+      <p class="section-label">{initiative.subtitle}</p>
+      <h1 class="font-display text-5xl md:text-6xl text-maroon-deep">{initiative.title}</h1>
+     
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-4xl px-6 py-16">
+    <p class="prose-indic text-lg">{initiative.description}</p>
+  </section>
+</BaseLayout>

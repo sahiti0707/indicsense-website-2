@@ -44,6 +44,9 @@ npm run preview
 | `/team` | Core team (Sevaks) |
 | `/mentors` | Faculty mentors |
 | `/about` | Club info & socials |
+| `/initiatives/indicsense` | IndicSense initiative details |
+| `/initiatives/ebsb` | Ek Bharat Shreshtha Bharat initiative details |
+| `/initiatives/spic-macay` | SPIC MACAY IIITDM initiative details |
 
 ## Updating content
 
@@ -60,6 +63,7 @@ All content is JSON in `src/data/` — no CMS required.
 | `gallery.json` | Gallery images (put files in `public/images/`) |
 | `videos.json` | YouTube IDs when ready |
 | `socials.json` | Instagram, YouTube, etc. URLs |
+| `initiatives.json` | Three initiative cards (IndicSense, EBSB, SPIC MACAY) |
 
 **Vṛttāntam articles** — keep publishing on [Medium](https://medium.com/@indicsense). They appear automatically via RSS.
 

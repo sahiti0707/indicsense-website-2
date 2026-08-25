@@ -16,19 +16,19 @@ const eventList = [samagam, sangam, virasat];
     </p>
   </section>
 
-  <section class="mx-auto max-w-7xl px-6 pb-32 space-y-16">
-    {eventList.map((event) => (
-      <a
-        href={`/events/${event.slug}`}
-        class="manuscript-card group flex flex-col lg:flex-row overflow-hidden"
-      >
-        <div class="lg:w-2/5 aspect-[4/3] lg:aspect-auto overflow-hidden">
-          <img
-            src={event.heroImage}
-            alt={event.title}
-            class="w-full h-full object-cover min-h-[240px] transition-transform duration-500 group-hover:scale-105"
-          />
-        </div>
+      <section class="mx-auto max-w-7xl px-6 pb-32 space-y-16">
+        {eventList.map((event) => (
+          <a
+            href={`/events/${event.slug}`}
+            class="manuscript-card group flex flex-col lg:flex-row overflow-hidden"
+          >
+            <div class="lg:w-2/5 aspect-[3/4] lg:aspect-auto overflow-hidden">
+              <img
+                src={event.heroImage}
+                alt={event.title}
+                class="w-full h-full object-cover min-h-[240px] transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
         <div class="lg:w-3/5 p-8 md:p-12 flex flex-col justify-center">
           <p class="section-label">{event.subtitle}</p>
           <h2 class="font-display text-4xl text-maroon-deep mt-1">{event.title}</h2>
