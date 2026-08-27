@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
 interface Quote {
+  sanskritText: string;
   text: string;
   translation: string;
   source: string;
@@ -33,6 +34,9 @@ export default function QuoteRotator({ quotes }: Props) {
     <div
       className={`text-center transition-opacity duration-500 ${visible ? "opacity-100" : "opacity-0"}`}
     >
+      <p className="font-devanagari text-3xl md:text-4xl lg:text-5xl text-maroon-deep leading-relaxed">
+        {quote.sanskritText}
+      </p>
       <p className="font-sanskrit text-3xl md:text-4xl lg:text-5xl text-maroon-deep leading-relaxed iast">
         {quote.text}
       </p>

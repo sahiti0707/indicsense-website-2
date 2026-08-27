@@ -1,0 +1,31 @@
+---
+interface Props {
+  node: {
+    asset?: {
+      url?: string;
+    };
+    alt?: string;
+    caption?: string;
+  };
+}
+
+const { node } = Astro.props;
+const imageUrl = node?.asset?.url;
+---
+
+{imageUrl && (
+  <figure class="my-8">
+    <img
+      src={imageUrl}
+      alt={node.alt || ""}
+      class="w-full rounded-lg"
+      loading="lazy"
+    />
+
+    {node.caption && (
+      <figcaption class="mt-2 text-center text-sm text-stone">
+        {node.caption}
+      </figcaption>
+    )}
+  </figure>
+)}
