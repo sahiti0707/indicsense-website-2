@@ -5,6 +5,7 @@ interface GalleryImage {
   alt: string;
   category: string;
   year: number;
+  tab: string;
 }
 
 interface Props {
@@ -12,32 +13,33 @@ interface Props {
   initialFilter?: string;
 }
 
-const CATEGORIES = ["all", "yatra", "art", "virasat", "performance", "architecture", "samagam", "workshop" ,"sangam"];
+const TABS = ["all", "yatra", "orientation concert", "invited talks", "virasat", "performances", "samagam", "sangam"];
 
 export default function PhotoGallery({ images, initialFilter = "all" }: Props) {
-  const [filter, setFilter] = useState(initialFilter);
+  const [activeTab, setActiveTab] = useState(initialFilter);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   // Sync filter with URL query param on client-side navigation
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const urlFilter = params.get("filter")?.toLowerCase();
-    if (urlFilter && CATEGORIES.includes(urlFilter) && urlFilter !== filter) {
-      setFilter(urlFilter);
+    if (urlFilter && TABS.includes(urlFilter) && urlFilter !== activeTab) {
+      setActiveTab(urlFilter);
     }
   }, []);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const currentFilter = params.get("filter")?.toLowerCase();
-    if (filter !== currentFilter) {
-      params.set("filter", filter);
+    if (activeTab !== currentFilter) {
+      params.set("filter", activeTab);
       window.history.replaceState({}, "", `${window.location.pathname}?${params.toString()}`);
     }
-  }, [filter]);
+  }, [activeTab]);
 
-  const filtered =
-    filter === "all" ? images : images.filter((img) => img.category === filter);
+  const filtered = activeTab === "all"
+    ? images
+    : images.filter((img) => img.tab?.toLowerCase() === activeTab.toLowerCase());
 
   // Group filtered images by year (newest first), then by category within
   // each year, so the "all" tab is organized by both dimensions.
@@ -61,11 +63,7 @@ export default function PhotoGallery({ images, initialFilter = "all" }: Props) {
         {}
       );
       const categories = Object.keys(byCategory)
-        .sort(
-          (a, b) =>
-            (CATEGORIES.indexOf(a) === -1 ? Number.MAX_SAFE_INTEGER : CATEGORIES.indexOf(a)) -
-            (CATEGORIES.indexOf(b) === -1 ? Number.MAX_SAFE_INTEGER : CATEGORIES.indexOf(b))
-        )
+        .sort()
         .map((category) => ({ category, images: byCategory[category] }));
       return { year, categories };
     });
@@ -129,18 +127,18 @@ export default function PhotoGallery({ images, initialFilter = "all" }: Props) {
   return (
     <>
       <div className="flex flex-wrap gap-2 mb-10 justify-center">
-        {CATEGORIES.map((cat) => (
+        {TABS.map((tab) => (
           <button
-            key={cat}
+            key={tab}
             type="button"
-            onClick={() => setFilter(cat)}
+            onClick={() => setActiveTab(tab)}
             className={`font-ui text-xs uppercase tracking-wider px-4 py-2 rounded-sm border transition-all ${
-              filter === cat
+              activeTab === tab
                 ? "border-maroon bg-maroon text-parchment"
                 : "border-stone/20 text-stone hover:border-maroon/40"
             }`}
           >
-            {cat}
+            {tab}
           </button>
         ))}
       </div>
@@ -164,11 +162,9 @@ export default function PhotoGallery({ images, initialFilter = "all" }: Props) {
                 runningIndex += cat.images.length;
                 return (
                   <div key={cat.category} className="mb-10">
-                    {group.categories.length > 1 && (
-                      <h4 className="font-display text-2xl text-maroon capitalize mb-4">
-                        {cat.category}
-                      </h4>
-                    )}
+                    <h4 className="font-display text-2xl text-maroon capitalize mb-4">
+                      {cat.category}
+                    </h4>
                     <div className="columns-2 md:columns-3 lg:columns-4 gap-3 space-y-3">
                       {cat.images.map((img, imageIndex) => {
                         const index = baseIndex + imageIndex;
@@ -238,9 +234,6 @@ export default function PhotoGallery({ images, initialFilter = "all" }: Props) {
               alt={lightbox.alt}
               className="max-h-[85vh] w-auto mx-auto rounded-sm"
             />
-            <p className="mt-3 text-center text-parchment font-ui text-sm">
-              {lightbox.alt}
-            </p>
             <button
               type="button"
               onClick={closeLightbox}

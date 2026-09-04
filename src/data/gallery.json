@@ -1,80 +1,1255 @@
 [
   {
-    "src": "/images/inspo/WhatsApp Image 2026-05-24 at 11.54.43 (1)-70fece0d-d6c8-4e6b-9142-d7defe5ea297.png",
-    "alt": "Temple ghat illustration",
-    "category": "yatra",
-    "year": 2026
+    "src": "/images/amrita mam concert 2023/WhatsApp Image 2026-08-25 at 6.01.10 PM.jpeg",
+    "alt": "amrita mam concert photograph",
+    "category": "amrita mam concert",
+    "year": 2023,
+    "tab": "orientation concert"
   },
   {
-    "src": "/images/inspo/WhatsApp Image 2026-05-24 at 11.54.42-f23500bc-8654-46b9-97d3-1bb625e911b4.png",
-    "alt": "Kalamkari goddess illustration",
-    "category": "art",
-    "year": 2026
+    "src": "/images/amrita mam concert 2023/WhatsApp Image 2026-08-25 at 6.01.12 PM.jpeg",
+    "alt": "amrita mam concert photograph",
+    "category": "amrita mam concert",
+    "year": 2023,
+    "tab": "orientation concert"
   },
   {
-    "src": "/images/inspo/WhatsApp Image 2026-05-24 at 11.54.43 (2)-67eee048-4b5b-494f-a2c5-b8f2a4e86c76.png",
-    "alt": "Traditional wedding painting",
-    "category": "virasat",
-    "year": 2026
+    "src": "/images/amrita mam concert 2023/WhatsApp Image 2026-08-25 at 6.01.13 PM.jpeg",
+    "alt": "amrita mam concert photograph",
+    "category": "amrita mam concert",
+    "year": 2023,
+    "tab": "orientation concert"
   },
   {
-    "src": "/images/inspo/WhatsApp Image 2026-05-24 at 11.54.45-4b4f0d14-9007-497b-a8f4-0bc0577729f0.png",
-    "alt": "Classical dance illustration",
-    "category": "performance",
-    "year": 2026
+    "src": "/images/amrita mam concert 2023/WhatsApp Image 2026-08-25 at 6.01.14 PM (1).jpeg",
+    "alt": "amrita mam concert photograph",
+    "category": "amrita mam concert",
+    "year": 2023,
+    "tab": "orientation concert"
   },
   {
-    "src": "/images/inspo/WhatsApp Image 2026-05-24 at 11.54.44 (1)-c10750c2-4566-4756-aae3-e1daa0f229e1.png",
-    "alt": "Temple pillar line art",
-    "category": "architecture",
-    "year": 2026
+    "src": "/images/amrita mam concert 2023/WhatsApp Image 2026-08-25 at 6.01.14 PM (2).jpeg",
+    "alt": "amrita mam concert photograph",
+    "category": "amrita mam concert",
+    "year": 2023,
+    "tab": "orientation concert"
   },
   {
-    "src": "/images/inspo/WhatsApp Image 2026-05-24 at 11.54.44-937a119a-2423-42ef-b2d9-8d3e46e118e7.png",
-    "alt": "Kalamkari medallion",
-    "category": "art",
-    "year": 2026
+    "src": "/images/amrita mam concert 2023/WhatsApp Image 2026-08-25 at 6.01.14 PM.jpeg",
+    "alt": "amrita mam concert photograph",
+    "category": "amrita mam concert",
+    "year": 2023,
+    "tab": "orientation concert"
   },
   {
-    "src": "/images/inspo/WhatsApp Image 2026-05-24 at 11.54.44 (2)-4d8c484c-b00a-467f-84cf-2658456a03be.png",
-    "alt": "Saraswati traditional art",
+    "src": "/images/amrita mam concert 2023/WhatsApp Image 2026-08-25 at 6.01.15 PM (1).jpeg",
+    "alt": "amrita mam concert photograph",
+    "category": "amrita mam concert",
+    "year": 2023,
+    "tab": "orientation concert"
+  },
+  {
+    "src": "/images/amrita mam concert 2023/WhatsApp Image 2026-08-25 at 6.01.15 PM.jpeg",
+    "alt": "amrita mam concert photograph",
+    "category": "amrita mam concert",
+    "year": 2023,
+    "tab": "orientation concert"
+  },
+  {
+    "src": "/images/amrita mam concert 2023/WhatsApp Image 2026-08-25 at 6.01.16 PM (1).jpeg",
+    "alt": "amrita mam concert photograph",
+    "category": "amrita mam concert",
+    "year": 2023,
+    "tab": "orientation concert"
+  },
+  {
+    "src": "/images/amrita mam concert 2023/WhatsApp Image 2026-08-25 at 6.01.16 PM.jpeg",
+    "alt": "amrita mam concert photograph",
+    "category": "amrita mam concert",
+    "year": 2023,
+    "tab": "orientation concert"
+  },
+  {
+    "src": "/images/arani trip 2024/WhatsApp Image 2026-08-25 at 6.00.58 PM (1).jpeg",
+    "alt": "arani trip photograph",
+    "category": "arani trip",
+    "year": 2024,
+    "tab": "yatra"
+  },
+  {
+    "src": "/images/arani trip 2024/WhatsApp Image 2026-08-25 at 6.00.58 PM.jpeg",
+    "alt": "arani trip photograph",
+    "category": "arani trip",
+    "year": 2024,
+    "tab": "yatra"
+  },
+  {
+    "src": "/images/arani trip 2024/WhatsApp Image 2026-08-25 at 6.00.59 PM (1).jpeg",
+    "alt": "arani trip photograph",
+    "category": "arani trip",
+    "year": 2024,
+    "tab": "yatra"
+  },
+  {
+    "src": "/images/arani trip 2024/WhatsApp Image 2026-08-25 at 6.00.59 PM (2).jpeg",
+    "alt": "arani trip photograph",
+    "category": "arani trip",
+    "year": 2024,
+    "tab": "yatra"
+  },
+  {
+    "src": "/images/arani trip 2024/WhatsApp Image 2026-08-25 at 6.00.59 PM.jpeg",
+    "alt": "arani trip photograph",
+    "category": "arani trip",
+    "year": 2024,
+    "tab": "yatra"
+  },
+  {
+    "src": "/images/arani trip 2024/WhatsApp Image 2026-08-25 at 6.01.00 PM (1).jpeg",
+    "alt": "arani trip photograph",
+    "category": "arani trip",
+    "year": 2024,
+    "tab": "yatra"
+  },
+  {
+    "src": "/images/arani trip 2024/WhatsApp Image 2026-08-25 at 6.01.00 PM (2).jpeg",
+    "alt": "arani trip photograph",
+    "category": "arani trip",
+    "year": 2024,
+    "tab": "yatra"
+  },
+  {
+    "src": "/images/arani trip 2024/WhatsApp Image 2026-08-25 at 6.01.00 PM.jpeg",
+    "alt": "arani trip photograph",
+    "category": "arani trip",
+    "year": 2024,
+    "tab": "yatra"
+  },
+  {
+    "src": "/images/arani trip 2024/WhatsApp Image 2026-08-25 at 6.01.01 PM (1).jpeg",
+    "alt": "arani trip photograph",
+    "category": "arani trip",
+    "year": 2024,
+    "tab": "yatra"
+  },
+  {
+    "src": "/images/arani trip 2024/WhatsApp Image 2026-08-25 at 6.01.01 PM.jpeg",
+    "alt": "arani trip photograph",
+    "category": "arani trip",
+    "year": 2024,
+    "tab": "yatra"
+  },
+  {
+    "src": "/images/harikatha 2025/WhatsApp Image 2026-08-25 at 5.40.32 PM (1).jpeg",
+    "alt": "harikatha photograph",
+    "category": "harikatha",
+    "year": 2025,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/harikatha 2025/WhatsApp Image 2026-08-25 at 5.40.32 PM.jpeg",
+    "alt": "harikatha photograph",
+    "category": "harikatha",
+    "year": 2025,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/harikatha 2025/WhatsApp Image 2026-08-25 at 5.40.33 PM (1).jpeg",
+    "alt": "harikatha photograph",
+    "category": "harikatha",
+    "year": 2025,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/harikatha 2025/WhatsApp Image 2026-08-25 at 5.40.33 PM (2).jpeg",
+    "alt": "harikatha photograph",
+    "category": "harikatha",
+    "year": 2025,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/harikatha 2025/WhatsApp Image 2026-08-25 at 5.40.33 PM.jpeg",
+    "alt": "harikatha photograph",
+    "category": "harikatha",
+    "year": 2025,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/harikatha 2025/WhatsApp Image 2026-08-25 at 5.40.34 PM (1).jpeg",
+    "alt": "harikatha photograph",
+    "category": "harikatha",
+    "year": 2025,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/harikatha 2025/WhatsApp Image 2026-08-25 at 5.40.34 PM (2).jpeg",
+    "alt": "harikatha photograph",
+    "category": "harikatha",
+    "year": 2025,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/harikatha 2025/WhatsApp Image 2026-08-25 at 5.40.34 PM.jpeg",
+    "alt": "harikatha photograph",
+    "category": "harikatha",
+    "year": 2025,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/harikatha 2025/WhatsApp Image 2026-08-25 at 5.40.35 PM.jpeg",
+    "alt": "harikatha photograph",
+    "category": "harikatha",
+    "year": 2025,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/indic philosophy workshop 2026/20260207_101024.jpg",
+    "alt": "indic philosophy workshop photograph",
+    "category": "indic philosophy workshop",
+    "year": 2026,
+    "tab": "invited talks"
+  },
+  {
+    "src": "/images/indic philosophy workshop 2026/20260207_101558.jpg",
+    "alt": "indic philosophy workshop photograph",
+    "category": "indic philosophy workshop",
+    "year": 2026,
+    "tab": "invited talks"
+  },
+  {
+    "src": "/images/indic philosophy workshop 2026/20260207_130817.jpg",
+    "alt": "indic philosophy workshop photograph",
+    "category": "indic philosophy workshop",
+    "year": 2026,
+    "tab": "invited talks"
+  },
+  {
+    "src": "/images/indic philosophy workshop 2026/IMG_20260207_102420.jpg",
+    "alt": "indic philosophy workshop photograph",
+    "category": "indic philosophy workshop",
+    "year": 2026,
+    "tab": "invited talks"
+  },
+  {
+    "src": "/images/indic philosophy workshop 2026/IMG_20260207_123928.jpg",
+    "alt": "indic philosophy workshop photograph",
+    "category": "indic philosophy workshop",
+    "year": 2026,
+    "tab": "invited talks"
+  },
+  {
+    "src": "/images/indic philosophy workshop 2026/IMG_20260207_194146.jpg",
+    "alt": "indic philosophy workshop photograph",
+    "category": "indic philosophy workshop",
+    "year": 2026,
+    "tab": "invited talks"
+  },
+  {
+    "src": "/images/kalahasti  heritage trip 2026/20260314_112359.jpg",
+    "alt": "kalahasti heritage trip photograph",
+    "category": "kalahasti heritage trip",
+    "year": 2026,
+    "tab": "yatra"
+  },
+  {
+    "src": "/images/kalahasti  heritage trip 2026/20260314_113234.jpg",
+    "alt": "kalahasti heritage trip photograph",
+    "category": "kalahasti heritage trip",
+    "year": 2026,
+    "tab": "yatra"
+  },
+  {
+    "src": "/images/kalahasti  heritage trip 2026/IMG-20260314-WA0119.jpg",
+    "alt": "kalahasti heritage trip photograph",
+    "category": "kalahasti heritage trip",
+    "year": 2026,
+    "tab": "yatra"
+  },
+  {
+    "src": "/images/kalahasti  heritage trip 2026/IMG20260314120359_01.jpg",
+    "alt": "kalahasti heritage trip photograph",
+    "category": "kalahasti heritage trip",
+    "year": 2026,
+    "tab": "yatra"
+  },
+  {
+    "src": "/images/kalahasti  heritage trip 2026/IMG20260314124604.jpg",
+    "alt": "kalahasti heritage trip photograph",
+    "category": "kalahasti heritage trip",
+    "year": 2026,
+    "tab": "yatra"
+  },
+  {
+    "src": "/images/kalahasti  heritage trip 2026/IMG20260314210053.jpg",
+    "alt": "kalahasti heritage trip photograph",
+    "category": "kalahasti heritage trip",
+    "year": 2026,
+    "tab": "yatra"
+  },
+  {
+    "src": "/images/kalahasti  heritage trip 2026/IMG_20260314_121221.jpg",
+    "alt": "kalahasti heritage trip photograph",
+    "category": "kalahasti heritage trip",
+    "year": 2026,
+    "tab": "yatra"
+  },
+  {
+    "src": "/images/kalahasti  heritage trip 2026/IMG_20260314_145753.jpg",
+    "alt": "kalahasti heritage trip photograph",
+    "category": "kalahasti heritage trip",
+    "year": 2026,
+    "tab": "yatra"
+  },
+  {
+    "src": "/images/nadaswaram 2025/WhatsApp Image 2026-08-25 at 5.53.53 PM.jpeg",
+    "alt": "nadaswaram photograph",
+    "category": "nadaswaram",
+    "year": 2025,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/nadaswaram 2025/WhatsApp Image 2026-08-25 at 5.53.54 PM (1).jpeg",
+    "alt": "nadaswaram photograph",
+    "category": "nadaswaram",
+    "year": 2025,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/nadaswaram 2025/WhatsApp Image 2026-08-25 at 5.53.54 PM.jpeg",
+    "alt": "nadaswaram photograph",
+    "category": "nadaswaram",
+    "year": 2025,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/nadaswaram 2025/WhatsApp Image 2026-08-25 at 5.53.55 PM.jpeg",
+    "alt": "nadaswaram photograph",
+    "category": "nadaswaram",
+    "year": 2025,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/nadaswaram 2025/WhatsApp Image 2026-08-25 at 5.53.56 PM (1).jpeg",
+    "alt": "nadaswaram photograph",
+    "category": "nadaswaram",
+    "year": 2025,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/nadaswaram 2025/WhatsApp Image 2026-08-25 at 5.53.56 PM (2).jpeg",
+    "alt": "nadaswaram photograph",
+    "category": "nadaswaram",
+    "year": 2025,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/nadaswaram 2025/WhatsApp Image 2026-08-25 at 5.53.56 PM.jpeg",
+    "alt": "nadaswaram photograph",
+    "category": "nadaswaram",
+    "year": 2025,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/nadaswaram 2025/WhatsApp Image 2026-08-25 at 5.53.57 PM (1).jpeg",
+    "alt": "nadaswaram photograph",
+    "category": "nadaswaram",
+    "year": 2025,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/nadaswaram 2025/WhatsApp Image 2026-08-25 at 5.53.57 PM.jpeg",
+    "alt": "nadaswaram photograph",
+    "category": "nadaswaram",
+    "year": 2025,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/nadaswaram 2025/WhatsApp Image 2026-08-25 at 5.53.58 PM.jpeg",
+    "alt": "nadaswaram photograph",
+    "category": "nadaswaram",
+    "year": 2025,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/orientation 2024/WhatsApp Image 2026-08-25 at 5.56.18 PM (1).jpeg",
+    "alt": "orientation photograph",
+    "category": "orientation",
+    "year": 2024,
+    "tab": "orientation concert"
+  },
+  {
+    "src": "/images/orientation 2024/WhatsApp Image 2026-08-25 at 5.56.18 PM.jpeg",
+    "alt": "orientation photograph",
+    "category": "orientation",
+    "year": 2024,
+    "tab": "orientation concert"
+  },
+  {
+    "src": "/images/orientation 2024/WhatsApp Image 2026-08-25 at 5.56.19 PM (1).jpeg",
+    "alt": "orientation photograph",
+    "category": "orientation",
+    "year": 2024,
+    "tab": "orientation concert"
+  },
+  {
+    "src": "/images/orientation 2024/WhatsApp Image 2026-08-25 at 5.56.19 PM.jpeg",
+    "alt": "orientation photograph",
+    "category": "orientation",
+    "year": 2024,
+    "tab": "orientation concert"
+  },
+  {
+    "src": "/images/orientation 2024/WhatsApp Image 2026-08-25 at 5.56.20 PM (1).jpeg",
+    "alt": "orientation photograph",
+    "category": "orientation",
+    "year": 2024,
+    "tab": "orientation concert"
+  },
+  {
+    "src": "/images/orientation 2024/WhatsApp Image 2026-08-25 at 5.56.20 PM (2).jpeg",
+    "alt": "orientation photograph",
+    "category": "orientation",
+    "year": 2024,
+    "tab": "orientation concert"
+  },
+  {
+    "src": "/images/orientation 2024/WhatsApp Image 2026-08-25 at 5.56.20 PM.jpeg",
+    "alt": "orientation photograph",
+    "category": "orientation",
+    "year": 2024,
+    "tab": "orientation concert"
+  },
+  {
+    "src": "/images/orientation 2024/WhatsApp Image 2026-08-25 at 5.56.21 PM (1).jpeg",
+    "alt": "orientation photograph",
+    "category": "orientation",
+    "year": 2024,
+    "tab": "orientation concert"
+  },
+  {
+    "src": "/images/orientation 2024/WhatsApp Image 2026-08-25 at 5.56.21 PM (2).jpeg",
+    "alt": "orientation photograph",
+    "category": "orientation",
+    "year": 2024,
+    "tab": "orientation concert"
+  },
+  {
+    "src": "/images/orientation 2024/WhatsApp Image 2026-08-25 at 5.56.21 PM.jpeg",
+    "alt": "orientation photograph",
+    "category": "orientation",
+    "year": 2024,
+    "tab": "orientation concert"
+  },
+  {
+    "src": "/images/regional convention 2025/WhatsApp Image 2026-08-25 at 5.53.14 PM (1).jpeg",
+    "alt": "regional convention photograph",
+    "category": "regional convention",
+    "year": 2025,
+    "tab": ""
+  },
+  {
+    "src": "/images/regional convention 2025/WhatsApp Image 2026-08-25 at 5.53.14 PM (2).jpeg",
+    "alt": "regional convention photograph",
+    "category": "regional convention",
+    "year": 2025,
+    "tab": ""
+  },
+  {
+    "src": "/images/regional convention 2025/WhatsApp Image 2026-08-25 at 5.53.14 PM.jpeg",
+    "alt": "regional convention photograph",
+    "category": "regional convention",
+    "year": 2025,
+    "tab": ""
+  },
+  {
+    "src": "/images/regional convention 2025/WhatsApp Image 2026-08-25 at 5.53.15 PM (1).jpeg",
+    "alt": "regional convention photograph",
+    "category": "regional convention",
+    "year": 2025,
+    "tab": ""
+  },
+  {
+    "src": "/images/regional convention 2025/WhatsApp Image 2026-08-25 at 5.53.15 PM (2).jpeg",
+    "alt": "regional convention photograph",
+    "category": "regional convention",
+    "year": 2025,
+    "tab": ""
+  },
+  {
+    "src": "/images/regional convention 2025/WhatsApp Image 2026-08-25 at 5.53.15 PM.jpeg",
+    "alt": "regional convention photograph",
+    "category": "regional convention",
+    "year": 2025,
+    "tab": ""
+  },
+  {
+    "src": "/images/regional convention 2025/WhatsApp Image 2026-08-25 at 5.53.16 PM (1).jpeg",
+    "alt": "regional convention photograph",
+    "category": "regional convention",
+    "year": 2025,
+    "tab": ""
+  },
+  {
+    "src": "/images/regional convention 2025/WhatsApp Image 2026-08-25 at 5.53.16 PM.jpeg",
+    "alt": "regional convention photograph",
+    "category": "regional convention",
+    "year": 2025,
+    "tab": ""
+  },
+  {
+    "src": "/images/regional convention 2025/WhatsApp Image 2026-08-25 at 5.53.17 PM (1).jpeg",
+    "alt": "regional convention photograph",
+    "category": "regional convention",
+    "year": 2025,
+    "tab": ""
+  },
+  {
+    "src": "/images/regional convention 2025/WhatsApp Image 2026-08-25 at 5.53.17 PM.jpeg",
+    "alt": "regional convention photograph",
+    "category": "regional convention",
+    "year": 2025,
+    "tab": ""
+  },
+  {
+    "src": "/images/regional convention 2025/WhatsApp Image 2026-08-25 at 5.53.18 PM.jpeg",
+    "alt": "regional convention photograph",
+    "category": "regional convention",
+    "year": 2025,
+    "tab": ""
+  },
+  {
+    "src": "/images/samagam 2024/IMG_5450.JPG",
+    "alt": "samagam photograph",
     "category": "samagam",
-    "year": 2026
+    "year": 2024,
+    "tab": "samagam"
   },
   {
-    "src": "public\\images\\indic philosophy workshop 2026\\20260207_095437.jpg",
-    "alt": "Traditional pattern collage",
-    "category": "workshop",
-    "year": 2026
+    "src": "/images/samagam 2024/IMG_5526.JPG",
+    "alt": "samagam photograph",
+    "category": "samagam",
+    "year": 2024,
+    "tab": "samagam"
   },
   {
-    "src": "public\\images\\indic philosophy workshop 2026\\20260207_095451.jpg",
-    "alt": "Traditional pattern collage",
-    "category": "workshop",
-    "year": 2025
+    "src": "/images/samagam 2024/IMG_5544.JPG",
+    "alt": "samagam photograph",
+    "category": "samagam",
+    "year": 2024,
+    "tab": "samagam"
   },
   {
-    "src": "public\\images\\indic philosophy workshop 2026\\20260207_100313.jpg",
-    "alt": "Traditional pattern collage",
-    "category": "workshop",
-    "year": 2025
+    "src": "/images/samagam 2024/IMG_5565.JPG",
+    "alt": "samagam photograph",
+    "category": "samagam",
+    "year": 2024,
+    "tab": "samagam"
   },
   {
-    "src": "public\\images\\indic philosophy workshop 2026\\20260207_101558.jpg",
-    "alt": "Traditional pattern collage",
-    "category": "workshop",
-    "year": 2025
+    "src": "/images/samagam 2024/IMG_5578.JPG",
+    "alt": "samagam photograph",
+    "category": "samagam",
+    "year": 2024,
+    "tab": "samagam"
   },
   {
-    "src": "public\\images\\indic philosophy workshop 2026\\20260207_113659.jpg",
-    "alt": "Traditional pattern collage",
-    "category": "workshop",
-    "year": 2026
+    "src": "/images/samagam 2024/IMG_5609.JPG",
+    "alt": "samagam photograph",
+    "category": "samagam",
+    "year": 2024,
+    "tab": "samagam"
   },
   {
-    "src": "/images/inspo/art-forms-of-india-that-have-survived-generations.jpg",
-    "alt": "Sangam festival illustration",
+    "src": "/images/samagam 2024/IMG_5639.JPG",
+    "alt": "samagam photograph",
+    "category": "samagam",
+    "year": 2024,
+    "tab": "samagam"
+  },
+  {
+    "src": "/images/samagam 2024/IMG_5650.JPG",
+    "alt": "samagam photograph",
+    "category": "samagam",
+    "year": 2024,
+    "tab": "samagam"
+  },
+  {
+    "src": "/images/samagam 2024/IMG_5656.JPG",
+    "alt": "samagam photograph",
+    "category": "samagam",
+    "year": 2024,
+    "tab": "samagam"
+  },
+  {
+    "src": "/images/samagam 2024/IMG_5664.JPG",
+    "alt": "samagam photograph",
+    "category": "samagam",
+    "year": 2024,
+    "tab": "samagam"
+  },
+  {
+    "src": "/images/samagam 2025/20250915_192105.jpg",
+    "alt": "samagam photograph",
+    "category": "samagam",
+    "year": 2025,
+    "tab": "samagam"
+  },
+  {
+    "src": "/images/samagam 2025/20250915_194549.jpg",
+    "alt": "samagam photograph",
+    "category": "samagam",
+    "year": 2025,
+    "tab": "samagam"
+  },
+  {
+    "src": "/images/samagam 2025/20250915_201422.jpg",
+    "alt": "samagam photograph",
+    "category": "samagam",
+    "year": 2025,
+    "tab": "samagam"
+  },
+  {
+    "src": "/images/samagam 2025/20250915_210101.jpg",
+    "alt": "samagam photograph",
+    "category": "samagam",
+    "year": 2025,
+    "tab": "samagam"
+  },
+  {
+    "src": "/images/samagam 2025/PXL_20250915_155652400.MP.jpg",
+    "alt": "samagam photograph",
+    "category": "samagam",
+    "year": 2025,
+    "tab": "samagam"
+  },
+  {
+    "src": "/images/sangam 2024/IMG_8317.JPG",
+    "alt": "sangam photograph",
     "category": "sangam",
-    "year": 2026
+    "year": 2024,
+    "tab": "sangam"
+  },
+  {
+    "src": "/images/sangam 2024/IMG_8326.JPG",
+    "alt": "sangam photograph",
+    "category": "sangam",
+    "year": 2024,
+    "tab": "sangam"
+  },
+  {
+    "src": "/images/sangam 2024/IMG_8349.JPG",
+    "alt": "sangam photograph",
+    "category": "sangam",
+    "year": 2024,
+    "tab": "sangam"
+  },
+  {
+    "src": "/images/sangam 2024/IMG_8369.JPG",
+    "alt": "sangam photograph",
+    "category": "sangam",
+    "year": 2024,
+    "tab": "sangam"
+  },
+  {
+    "src": "/images/sangam 2024/IMG_8412.JPG",
+    "alt": "sangam photograph",
+    "category": "sangam",
+    "year": 2024,
+    "tab": "sangam"
+  },
+  {
+    "src": "/images/sangam 2024/IMG_8452.JPG",
+    "alt": "sangam photograph",
+    "category": "sangam",
+    "year": 2024,
+    "tab": "sangam"
+  },
+  {
+    "src": "/images/sangam 2024/IMG_8470.JPG",
+    "alt": "sangam photograph",
+    "category": "sangam",
+    "year": 2024,
+    "tab": "sangam"
+  },
+  {
+    "src": "/images/sangam 2024/IMG_8519.JPG",
+    "alt": "sangam photograph",
+    "category": "sangam",
+    "year": 2024,
+    "tab": "sangam"
+  },
+  {
+    "src": "/images/sangam 2024/IMG_8606.JPG",
+    "alt": "sangam photograph",
+    "category": "sangam",
+    "year": 2024,
+    "tab": "sangam"
+  },
+  {
+    "src": "/images/sangam 2024/IMG_8617.JPG",
+    "alt": "sangam photograph",
+    "category": "sangam",
+    "year": 2024,
+    "tab": "sangam"
+  },
+  {
+    "src": "/images/sangam 2024/IMG_8623.JPG",
+    "alt": "sangam photograph",
+    "category": "sangam",
+    "year": 2024,
+    "tab": "sangam"
+  },
+  {
+    "src": "/images/sangam 2024/IMG_8627.JPG",
+    "alt": "sangam photograph",
+    "category": "sangam",
+    "year": 2024,
+    "tab": "sangam"
+  },
+  {
+    "src": "/images/sangam 2024/IMG_8636.JPG",
+    "alt": "sangam photograph",
+    "category": "sangam",
+    "year": 2024,
+    "tab": "sangam"
+  },
+  {
+    "src": "/images/sangam 2024/IMG_8712.JPG",
+    "alt": "sangam photograph",
+    "category": "sangam",
+    "year": 2024,
+    "tab": "sangam"
+  },
+  {
+    "src": "/images/sangam 2024/IMG_8760.JPG",
+    "alt": "sangam photograph",
+    "category": "sangam",
+    "year": 2024,
+    "tab": "sangam"
+  },
+  {
+    "src": "/images/sangam 2024/IMG_8787.JPG",
+    "alt": "sangam photograph",
+    "category": "sangam",
+    "year": 2024,
+    "tab": "sangam"
+  },
+  {
+    "src": "/images/sangam 2024/IMG_8821.JPG",
+    "alt": "sangam photograph",
+    "category": "sangam",
+    "year": 2024,
+    "tab": "sangam"
+  },
+  {
+    "src": "/images/sangam 2024/IMG_8849.JPG",
+    "alt": "sangam photograph",
+    "category": "sangam",
+    "year": 2024,
+    "tab": "sangam"
+  },
+  {
+    "src": "/images/sangam 2024/IMG_9177.JPG",
+    "alt": "sangam photograph",
+    "category": "sangam",
+    "year": 2024,
+    "tab": "sangam"
+  },
+  {
+    "src": "/images/sangam 2024/IMG_9229.JPG",
+    "alt": "sangam photograph",
+    "category": "sangam",
+    "year": 2024,
+    "tab": "sangam"
+  },
+  {
+    "src": "/images/sangam 2024/IMG_9241.JPG",
+    "alt": "sangam photograph",
+    "category": "sangam",
+    "year": 2024,
+    "tab": "sangam"
+  },
+  {
+    "src": "/images/sangam 2025/IMG_7214.JPG",
+    "alt": "sangam photograph",
+    "category": "sangam",
+    "year": 2025,
+    "tab": "sangam"
+  },
+  {
+    "src": "/images/sangam 2025/IMG_7478.JPG",
+    "alt": "sangam photograph",
+    "category": "sangam",
+    "year": 2025,
+    "tab": "sangam"
+  },
+  {
+    "src": "/images/sangam 2025/IMG_7670.JPG",
+    "alt": "sangam photograph",
+    "category": "sangam",
+    "year": 2025,
+    "tab": "sangam"
+  },
+  {
+    "src": "/images/sangam 2025/IMG_7714 (1).JPG",
+    "alt": "sangam photograph",
+    "category": "sangam",
+    "year": 2025,
+    "tab": "sangam"
+  },
+  {
+    "src": "/images/sangam 2025/IMG_7717.JPG",
+    "alt": "sangam photograph",
+    "category": "sangam",
+    "year": 2025,
+    "tab": "sangam"
+  },
+  {
+    "src": "/images/sangam 2025/IMG_7740 (1).JPG",
+    "alt": "sangam photograph",
+    "category": "sangam",
+    "year": 2025,
+    "tab": "sangam"
+  },
+  {
+    "src": "/images/sangam 2025/IMG_7895 (1).JPG",
+    "alt": "sangam photograph",
+    "category": "sangam",
+    "year": 2025,
+    "tab": "sangam"
+  },
+  {
+    "src": "/images/sangam 2025/IMG_7954 (1).JPG",
+    "alt": "sangam photograph",
+    "category": "sangam",
+    "year": 2025,
+    "tab": "sangam"
+  },
+  {
+    "src": "/images/sangam 2025/IMG_8109.JPG",
+    "alt": "sangam photograph",
+    "category": "sangam",
+    "year": 2025,
+    "tab": "sangam"
+  },
+  {
+    "src": "/images/sangam 2025/WhatsApp Image 2025-12-10 at 5.19.20 PM.jpeg",
+    "alt": "sangam photograph",
+    "category": "sangam",
+    "year": 2025,
+    "tab": "sangam"
+  },
+  {
+    "src": "/images/therukoothu 2024/WhatsApp Image 2026-08-25 at 5.51.38 PM.jpeg",
+    "alt": "therukoothu photograph",
+    "category": "therukoothu",
+    "year": 2024,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/therukoothu 2024/WhatsApp Image 2026-08-25 at 5.51.39 PM (1).jpeg",
+    "alt": "therukoothu photograph",
+    "category": "therukoothu",
+    "year": 2024,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/therukoothu 2024/WhatsApp Image 2026-08-25 at 5.51.39 PM (2).jpeg",
+    "alt": "therukoothu photograph",
+    "category": "therukoothu",
+    "year": 2024,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/therukoothu 2024/WhatsApp Image 2026-08-25 at 5.51.39 PM.jpeg",
+    "alt": "therukoothu photograph",
+    "category": "therukoothu",
+    "year": 2024,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/therukoothu 2024/WhatsApp Image 2026-08-25 at 5.51.40 PM (1).jpeg",
+    "alt": "therukoothu photograph",
+    "category": "therukoothu",
+    "year": 2024,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/therukoothu 2024/WhatsApp Image 2026-08-25 at 5.51.40 PM.jpeg",
+    "alt": "therukoothu photograph",
+    "category": "therukoothu",
+    "year": 2024,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/therukoothu 2024/WhatsApp Image 2026-08-25 at 5.51.41 PM (1).jpeg",
+    "alt": "therukoothu photograph",
+    "category": "therukoothu",
+    "year": 2024,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/therukoothu 2024/WhatsApp Image 2026-08-25 at 5.51.41 PM (2).jpeg",
+    "alt": "therukoothu photograph",
+    "category": "therukoothu",
+    "year": 2024,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/therukoothu 2024/WhatsApp Image 2026-08-25 at 5.51.41 PM.jpeg",
+    "alt": "therukoothu photograph",
+    "category": "therukoothu",
+    "year": 2024,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/therukoothu 2024/WhatsApp Image 2026-08-25 at 5.51.42 PM.jpeg",
+    "alt": "therukoothu photograph",
+    "category": "therukoothu",
+    "year": 2024,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/tholpavakothu 2023/WhatsApp Image 2026-08-25 at 5.49.07 PM (1).jpeg",
+    "alt": "tholpavakothu photograph",
+    "category": "tholpavakothu",
+    "year": 2023,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/tholpavakothu 2023/WhatsApp Image 2026-08-25 at 5.49.07 PM.jpeg",
+    "alt": "tholpavakothu photograph",
+    "category": "tholpavakothu",
+    "year": 2023,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/tholpavakothu 2023/WhatsApp Image 2026-08-25 at 5.49.08 PM (1).jpeg",
+    "alt": "tholpavakothu photograph",
+    "category": "tholpavakothu",
+    "year": 2023,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/tholpavakothu 2023/WhatsApp Image 2026-08-25 at 5.49.08 PM (2).jpeg",
+    "alt": "tholpavakothu photograph",
+    "category": "tholpavakothu",
+    "year": 2023,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/tholpavakothu 2023/WhatsApp Image 2026-08-25 at 5.49.08 PM.jpeg",
+    "alt": "tholpavakothu photograph",
+    "category": "tholpavakothu",
+    "year": 2023,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/tholpavakothu 2023/WhatsApp Image 2026-08-25 at 5.49.09 PM (1).jpeg",
+    "alt": "tholpavakothu photograph",
+    "category": "tholpavakothu",
+    "year": 2023,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/tholpavakothu 2023/WhatsApp Image 2026-08-25 at 5.49.09 PM.jpeg",
+    "alt": "tholpavakothu photograph",
+    "category": "tholpavakothu",
+    "year": 2023,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/tholpavakothu 2023/WhatsApp Image 2026-08-25 at 5.49.10 PM (1).jpeg",
+    "alt": "tholpavakothu photograph",
+    "category": "tholpavakothu",
+    "year": 2023,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/tholpavakothu 2023/WhatsApp Image 2026-08-25 at 5.49.10 PM (2).jpeg",
+    "alt": "tholpavakothu photograph",
+    "category": "tholpavakothu",
+    "year": 2023,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/tholpavakothu 2023/WhatsApp Image 2026-08-25 at 5.49.10 PM.jpeg",
+    "alt": "tholpavakothu photograph",
+    "category": "tholpavakothu",
+    "year": 2023,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/tholpavakothu 2023/WhatsApp Image 2026-08-25 at 5.49.11 PM.jpeg",
+    "alt": "tholpavakothu photograph",
+    "category": "tholpavakothu",
+    "year": 2023,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/tholubommalata  performance 2026/IMG_0667.jpg",
+    "alt": "tholubommalata performance photograph",
+    "category": "tholubommalata performance",
+    "year": 2026,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/tholubommalata  performance 2026/IMG_0690.jpg",
+    "alt": "tholubommalata performance photograph",
+    "category": "tholubommalata performance",
+    "year": 2026,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/tholubommalata  performance 2026/IMG_1258.JPG",
+    "alt": "tholubommalata performance photograph",
+    "category": "tholubommalata performance",
+    "year": 2026,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/tholubommalata  performance 2026/IMG_1265.JPG",
+    "alt": "tholubommalata performance photograph",
+    "category": "tholubommalata performance",
+    "year": 2026,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/tholubommalata  performance 2026/IMG_1283.JPG",
+    "alt": "tholubommalata performance photograph",
+    "category": "tholubommalata performance",
+    "year": 2026,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/tholubommalata  performance 2026/IMG_1300.JPG",
+    "alt": "tholubommalata performance photograph",
+    "category": "tholubommalata performance",
+    "year": 2026,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/tholubommalata  performance 2026/IMG_1315.JPG",
+    "alt": "tholubommalata performance photograph",
+    "category": "tholubommalata performance",
+    "year": 2026,
+    "tab": "performances"
+  },
+  {
+    "src": "/images/vikram sampath talk 2024/WhatsApp Image 2026-08-25 at 5.45.24 PM.jpeg",
+    "alt": "vikram sampath talk photograph",
+    "category": "vikram sampath talk",
+    "year": 2024,
+    "tab": "invited talks"
+  },
+  {
+    "src": "/images/vikram sampath talk 2024/WhatsApp Image 2026-08-25 at 5.45.25 PM (1).jpeg",
+    "alt": "vikram sampath talk photograph",
+    "category": "vikram sampath talk",
+    "year": 2024,
+    "tab": "invited talks"
+  },
+  {
+    "src": "/images/vikram sampath talk 2024/WhatsApp Image 2026-08-25 at 5.45.25 PM.jpeg",
+    "alt": "vikram sampath talk photograph",
+    "category": "vikram sampath talk",
+    "year": 2024,
+    "tab": "invited talks"
+  },
+  {
+    "src": "/images/vikram sampath talk 2024/WhatsApp Image 2026-08-25 at 5.46.25 PM.jpeg",
+    "alt": "vikram sampath talk photograph",
+    "category": "vikram sampath talk",
+    "year": 2024,
+    "tab": "invited talks"
+  },
+  {
+    "src": "/images/vikram sampath talk 2024/WhatsApp Image 2026-08-25 at 5.46.26 PM (1).jpeg",
+    "alt": "vikram sampath talk photograph",
+    "category": "vikram sampath talk",
+    "year": 2024,
+    "tab": "invited talks"
+  },
+  {
+    "src": "/images/vikram sampath talk 2024/WhatsApp Image 2026-08-25 at 5.46.26 PM.jpeg",
+    "alt": "vikram sampath talk photograph",
+    "category": "vikram sampath talk",
+    "year": 2024,
+    "tab": "invited talks"
+  },
+  {
+    "src": "/images/vikram sampath talk 2024/WhatsApp Image 2026-08-25 at 5.46.27 PM (1).jpeg",
+    "alt": "vikram sampath talk photograph",
+    "category": "vikram sampath talk",
+    "year": 2024,
+    "tab": "invited talks"
+  },
+  {
+    "src": "/images/vikram sampath talk 2024/WhatsApp Image 2026-08-25 at 5.46.27 PM (2).jpeg",
+    "alt": "vikram sampath talk photograph",
+    "category": "vikram sampath talk",
+    "year": 2024,
+    "tab": "invited talks"
+  },
+  {
+    "src": "/images/vikram sampath talk 2024/WhatsApp Image 2026-08-25 at 5.46.27 PM.jpeg",
+    "alt": "vikram sampath talk photograph",
+    "category": "vikram sampath talk",
+    "year": 2024,
+    "tab": "invited talks"
+  },
+  {
+    "src": "/images/vikram sampath talk 2024/WhatsApp Image 2026-08-25 at 5.46.28 PM.jpeg",
+    "alt": "vikram sampath talk photograph",
+    "category": "vikram sampath talk",
+    "year": 2024,
+    "tab": "invited talks"
+  },
+  {
+    "src": "/images/virasat 2024/IMG_0310.JPG",
+    "alt": "virasat photograph",
+    "category": "virasat",
+    "year": 2024,
+    "tab": "virasat"
+  },
+  {
+    "src": "/images/virasat 2024/IMG_0323.JPG",
+    "alt": "virasat photograph",
+    "category": "virasat",
+    "year": 2024,
+    "tab": "virasat"
+  },
+  {
+    "src": "/images/virasat 2024/IMG_0402.JPG",
+    "alt": "virasat photograph",
+    "category": "virasat",
+    "year": 2024,
+    "tab": "virasat"
+  },
+  {
+    "src": "/images/virasat 2024/IMG_0431.JPG",
+    "alt": "virasat photograph",
+    "category": "virasat",
+    "year": 2024,
+    "tab": "virasat"
+  },
+  {
+    "src": "/images/virasat 2024/IMG_1324.JPG",
+    "alt": "virasat photograph",
+    "category": "virasat",
+    "year": 2024,
+    "tab": "virasat"
+  },
+  {
+    "src": "/images/virasat 2024/IMG_1744.JPG",
+    "alt": "virasat photograph",
+    "category": "virasat",
+    "year": 2024,
+    "tab": "virasat"
+  },
+  {
+    "src": "/images/virasat 2024/IMG_1756.JPG",
+    "alt": "virasat photograph",
+    "category": "virasat",
+    "year": 2024,
+    "tab": "virasat"
+  },
+  {
+    "src": "/images/virasat 2024/IMG_1771.JPG",
+    "alt": "virasat photograph",
+    "category": "virasat",
+    "year": 2024,
+    "tab": "virasat"
+  },
+  {
+    "src": "/images/virasat 2024/IMG_1772.JPG",
+    "alt": "virasat photograph",
+    "category": "virasat",
+    "year": 2024,
+    "tab": "virasat"
+  },
+  {
+    "src": "/images/virasat 2024/IMG_1789.JPG",
+    "alt": "virasat photograph",
+    "category": "virasat",
+    "year": 2024,
+    "tab": "virasat"
+  },
+  {
+    "src": "/images/virasat 2024/IMG_1809.JPG",
+    "alt": "virasat photograph",
+    "category": "virasat",
+    "year": 2024,
+    "tab": "virasat"
+  },
+  {
+    "src": "/images/virasat 2024/IMG_1985.JPG",
+    "alt": "virasat photograph",
+    "category": "virasat",
+    "year": 2024,
+    "tab": "virasat"
+  },
+  {
+    "src": "/images/virasat 2024/IMG_6692.JPG",
+    "alt": "virasat photograph",
+    "category": "virasat",
+    "year": 2024,
+    "tab": "virasat"
+  },
+  {
+    "src": "/images/virasat 2025/20251101_161316.jpg",
+    "alt": "virasat photograph",
+    "category": "virasat",
+    "year": 2025,
+    "tab": "virasat"
+  },
+  {
+    "src": "/images/virasat 2025/20251102_144732.jpg",
+    "alt": "virasat photograph",
+    "category": "virasat",
+    "year": 2025,
+    "tab": "virasat"
+  },
+  {
+    "src": "/images/virasat 2025/IMG-20251031-WA0026.jpg",
+    "alt": "virasat photograph",
+    "category": "virasat",
+    "year": 2025,
+    "tab": "virasat"
+  },
+  {
+    "src": "/images/virasat 2025/IMG-20251031-WA0035.jpg",
+    "alt": "virasat photograph",
+    "category": "virasat",
+    "year": 2025,
+    "tab": "virasat"
+  },
+  {
+    "src": "/images/virasat 2025/IMG-20251101-WA0008.jpg",
+    "alt": "virasat photograph",
+    "category": "virasat",
+    "year": 2025,
+    "tab": "virasat"
+  },
+  {
+    "src": "/images/virasat 2025/IMG-20251101-WA0021.jpg",
+    "alt": "virasat photograph",
+    "category": "virasat",
+    "year": 2025,
+    "tab": "virasat"
+  },
+  {
+    "src": "/images/virasat 2025/IMG-20251102-WA0019.jpg",
+    "alt": "virasat photograph",
+    "category": "virasat",
+    "year": 2025,
+    "tab": "virasat"
+  },
+  {
+    "src": "/images/virasat 2025/IMG-20251102-WA0040.jpg",
+    "alt": "virasat photograph",
+    "category": "virasat",
+    "year": 2025,
+    "tab": "virasat"
   }
 ]

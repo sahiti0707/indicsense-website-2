@@ -81,6 +81,38 @@ The calendar UI is a placeholder. When your Canva design is ready:
 - Inspiration/reference art: `public/images/inspo/`
 - Replace inspo images with real club photos in `gallery.json`
 
+## Gallery Auto-Sync Script
+
+A Node.js script at `scripts/sync-gallery.js` automatically generates `src/data/gallery.json` by scanning image folders in `public/images/`.
+
+### How it works
+
+1. **Dynamic folder discovery** — scans all directories in `public/images/` (no hardcoded list)
+2. **Skips static asset folders**: `backgrounds`, `inspo`, `logos`
+3. **Normalizes folder names** — collapses consecutive spaces, trims whitespace
+4. **Category** extracted by removing 4-digit year and cleaning up spaces (lowercased)
+5. **Year** extracted via word-boundary regex `/\b(20\d{2})\b/`
+6. **Alt text** generated as `${category} photograph`
+7. **Supported formats**: jpg, jpeg, png, webp, svg (recursive scan)
+
+### Usage
+
+```bash
+node scripts/sync-gallery.js
+```
+
+Run this after adding new event photo folders to `public/images/` to regenerate `gallery.json` without manual edits.
+
+### Current gallery.json structure
+
+Each entry contains:
+- `src` — path from public root (e.g., `/images/orientation2024/IMG_123.jpg`)
+- `alt` — auto-generated alt text
+- `category` — folder-derived slug (e.g., `orientation`, `sangam`, `virasat`)
+- `year` — extracted year (e.g., 2024, 2025, 2026)
+
+The gallery page (`/gallery`) filters by category and year using these fields.
+
 ## Deploy later
 
 Works on Vercel, Netlify, or any static host:

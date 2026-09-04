@@ -3,10 +3,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import PhotoGallery from "../components/react/PhotoGallery";
 import gallery from "../data/gallery.json";
 
-const CATEGORIES = ["all", "yatra", "art", "virasat", "performance", "architecture", "samagam", "workshop","sangam"];
+const TABS = ["all", "yatra", "invited talks", "virasat", "performances", "architecture", "samagam", "workshop","sangam"];
 
 const urlFilter = Astro.url.searchParams.get("filter")?.toLowerCase();
-const initialFilter = urlFilter && CATEGORIES.includes(urlFilter) ? urlFilter : "all";
+const initialFilter = urlFilter && TABS.includes(urlFilter) ? urlFilter : "all";
 ---
 
 <BaseLayout title="Gallery" description="Moments from IndicSense — workshops, yātrās, festivals, and cultural events.">
@@ -14,7 +14,7 @@ const initialFilter = urlFilter && CATEGORIES.includes(urlFilter) ? urlFilter : 
     <p class="section-label">Visual Chronicle</p>
     <h1 class="font-display text-5xl text-maroon-deep mt-2">Gallery</h1>
     <p class="mt-4 text-stone max-w-xl mx-auto">
-      Workshops, temple visits, Gītā sessions, Virasat, Samāgam — replace placeholder images with your club photos.
+      A walk down the memory lane of IndicSense. Explore the moments captured in our gallery, showcasing the vibrant tapestry of our community.
     </p>
   </section>
 
