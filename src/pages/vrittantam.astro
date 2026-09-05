@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import SanityArticleCard from "../components/SanityArticleCard.astro";
+import site from "../data/site.json";
 import { client } from "../lib/sanity";
 
 interface Article {
@@ -28,6 +29,7 @@ const articles = await client.fetch<Article[]>(`
   title="Vṛttāntam"
   description="Intellectual articles from IndicSense — Dharma, Itihāsa, philosophy, arts, and more."
 >
+  <!-- Vṛttāntam Introduction -->
   <section class="relative py-24 overflow-hidden">
     <div
       class="absolute inset-0 opacity-[0.06]"
@@ -46,15 +48,30 @@ const articles = await client.fetch<Article[]>(`
       </p>
 
       <p class="mt-6 text-stone max-w-2xl mx-auto">
-        Serious writing on civilizational inquiry. Articles are published through IndicSense.
+        Vṛttāntam is an initiative dedicated to documenting, describing, and
+        presenting the rich diversity of Indian culture, traditions, practices,
+        places, history, and everything that can be considered Indic. Through
+        well-researched articles, we aim to provide readers with detailed
+        insights into these subjects and promote a deeper understanding of
+        India's civilizational heritage.
       </p>
+
+      <a
+        href={site.mediumUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="mt-8 inline-block btn-primary"
+      >
+        Follow on Medium →
+      </a>
     </div>
   </section>
 
+  <!-- Vṛttāntam Articles -->
   <section class="mx-auto max-w-7xl px-6 pb-32">
     {articles.length > 0 ? (
       <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        {articles.map((article) => (
+        {articles.map((article: Article) => (
           <SanityArticleCard
             title={article.title}
             slug={article.slug}
@@ -68,6 +85,15 @@ const articles = await client.fetch<Article[]>(`
         <p class="text-stone mb-4">
           No articles have been published yet.
         </p>
+
+        <a
+          href={site.mediumUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-primary"
+        >
+          Visit Vṛttāntam on Medium →
+        </a>
       </div>
     )}
   </section>
