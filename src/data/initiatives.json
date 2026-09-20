@@ -4,10 +4,10 @@
     "title": "EBSB",
     "subtitle": "Ek Bharat Shreshtha Bharat",
     "sanskrit": "eka bhārata śreṣṭha bhārata",
-    "description": "EBSB (Ek Bharat Shreshtha Bharat) is a Government of India initiative that aims to celebrate the unity in diversity of our nation. At IIITDM Kancheepuram, we actively participate in EBSB activities, fostering cultural exchange and national integration through language learning, cultural festivals, student exchanges, and collaborative events that strengthen the bonds between people of different states and UTs.",
+    "description": "As part of the Ek Bharat Shreshtha Bharat initiative, IndicSense hosts Sangam, an annual cultural showcase highlighting diverse Indic art forms from the different states of India. The event brings people together to discover and celebrate the traditions of their own states as well as others. Through this journey, Sangam aims to deepen appreciation for the rich Indic knowledge preserved through these art forms, while fostering a shared sense of unity, identity, and connection among performers and audiences alike.",
     "route": "/initiatives/ebsb",
-    "heroImage": "/images/inspo/art-forms-of-india-that-have-survived-generations.jpg",
-    "imagePath": "/images/inspo/art-forms-of-india-that-have-survived-generations.jpg"
+    "heroImage": "/images/logos/ebsb-logo.jpg",
+    "imagePath": "/images/logos/ebsb-logo.jpg"
   },
   {
     "slug": "spic-macay",
@@ -16,7 +16,7 @@
     "sanskrit": "spic macay",
     "description": "SPIC MACAY IIITDM Kancheepuram chapter brings the best of Indian classical music, dance, folk arts, crafts, yoga, and holistic arts to the campus. Through concerts, workshops, lec-dems, intensives, and heritage walks, we create immersive experiences that connect students with the depth and beauty of Bhāratiya kalā and paramparā. Our chapter hosts regular events featuring eminent artists and gurus from across the country.",
     "route": "/initiatives/spic-macay",
-    "heroImage": "/images/inspo/WhatsApp Image 2026-05-24 at 11.54.42-f23500bc-8654-46b9-97d3-1bb625e911b4.png",
-    "imagePath": "/images/inspo/WhatsApp Image 2026-05-24 at 11.54.42-f23500bc-8654-46b9-97d3-1bb625e911b4.png"
+    "heroImage": "/images/logos/SPIC-MACAY-Logo.png",
+    "imagePath": "/images/logos/SPIC-MACAY-Logo.png"
   }
 ]
