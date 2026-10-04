@@ -165,7 +165,7 @@ export default function PhotoGallery({ images, initialFilter = "all" }: Props) {
                     <h4 className="font-display text-2xl text-maroon capitalize mb-4">
                       {cat.category}
                     </h4>
-                    <div className="columns-2 md:columns-3 lg:columns-4 gap-3 space-y-3">
+                    <div className="grid grid-cols-3 gap-3">
                       {cat.images.map((img, imageIndex) => {
                         const index = baseIndex + imageIndex;
                         return (
