@@ -6,7 +6,6 @@ import {schemaTypes} from './schemaTypes'
 export default defineConfig({
   name: 'default',
   title: 'Indic-sense-website',
-
   projectId: 'f2gpt4sb',
   dataset: 'production',
 

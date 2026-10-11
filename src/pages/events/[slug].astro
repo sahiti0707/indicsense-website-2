@@ -267,12 +267,12 @@ const guidelinesPdfUrl = event.guidelinesPdfUrl ?? "";
   const modalClose = document.getElementById("modal-close");
   const modalOk = document.getElementById("modal-ok");
 
-  function openModal(title, message) {
-    modalTitle.textContent = title;
-    modalMessage.textContent = message;
-    modal.classList.remove("hidden");
-    modal.classList.add("flex");
-    modalOk.focus();
+  function openModal(title: string, message: string) {
+    modalTitle?.textContent = title;
+    modalMessage?.textContent = message;
+    modal?.classList.remove("hidden");
+    modal?.classList.add("flex");
+    modalOk?.focus();
   }
 
   function closeModal() {
