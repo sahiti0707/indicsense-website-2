@@ -14,6 +14,7 @@ A modern digital gurukulam for **IndicSense** — the cultural-intellectual soci
 ## Run locally
 
 ```bash
+git clone https://github.com/IndicSense-IIITDM/Website.git
 cd indicsense-website
 npm install
 npm run dev
@@ -32,47 +33,19 @@ npm run preview
 
 | Route | Feature |
 |-------|---------|
-| `/` | Homepage — hero, nitya karma, quote, articles, events, SPIC MACAY, videos, gallery |
-| `/nitya-karma` | Daily posts feed |
-| `/calendar` | Pañcāṅga-style festival calendar |
+| `/` | Homepage — hero, quote, articles, events, SPIC MACAY, gallery |
 | `/vrittantam` | Medium articles (RSS) |
 | `/events` | Samāgam, Saṅgam, Vīrasat |
 | `/gallery` | Photo gallery with filters & lightbox |
 | `/team` | Core team (Sevaks) |
-| `/mentors` | Faculty mentors |
-| `/about` | Club info & socials |
+| `/about` | Club info & socials , our initiatives|
 
-## Updating content
-
-All content is JSON in `src/data/` — no CMS required.
-
-| File | What to edit |
-|------|----------------|
-| `nitya-karma.json` | Daily posts |
-| `quotes.json` | Rotating shlokas (IAST) |
-| `calendar-data/2026.json` | Festival calendar (replace with spreadsheet export) |
-| `events.json` | Event descriptions |
-| `team.json` | Sevak names & quotes |
-| `mentors.json` | Mentor bios |
-| `gallery.json` | Gallery images (put files in `public/images/`) |
-| `videos.json` | YouTube IDs when ready |
-| `socials.json` | Instagram, YouTube, etc. URLs |
-
-**Vṛttāntam articles** — keep publishing on [Medium](https://medium.com/@indicsense). They appear automatically via RSS.
-
-## Calendar
-
-The calendar UI is a placeholder. When your Canva design is ready:
-
-1. Export spreadsheet dates to `src/data/calendar-data/YYYY.json`
-2. Match the entry format in `2026.json`
-3. Optionally restyle `PanchangCalendar.tsx`
 
 ## Assets
 
 - Logos: `public/images/logos/`
 - Inspiration/reference art: `public/images/inspo/`
-- Replace inspo images with real club photos in `gallery.json`
+- Event photos:`public/images/<eventname year>/`
 
 ## Gallery Auto-Sync Script
 
@@ -106,14 +79,53 @@ Each entry contains:
 
 The gallery page (`/gallery`) filters by category and year using these fields.
 
-## Deploy later
+## Event Registration System
 
-Works on Vercel, Netlify, or any static host:
+Registration is controlled through JSON config files. The page reads the config and behaves accordingly.
+
+### Config files
+
+| Event | File |
+|---|---|
+| Samāgam | `src/data/events/samagam.json` |
+| Saṅgam | `src/data/events/sangam.json` |
+| Vīrasat | `src/data/events/virasat.json` |
+
+### Fields (identical in all three files)
+
+| Field | Type | Default | Description |
+|---|---|---|---|
+| `isRegistrationOpen` | boolean | `false` | `true` opens registration, `false` closes it |
+| `registrationFormUrl` | string | `""` | Registration form URL; leave empty or as a placeholder when closed |
+| `isGuidelinesUploaded` | boolean | `false` | Set to `true` when the guidelines PDF is available |
+| `guidelinesPdfUrl` | string | `""` | Guidelines PDF URL; leave empty when not uploaded |
+
+### Updating the settings (Samāgam example)
 
 ```bash
-npm run build
-# deploy the `dist/` folder
+# Turn registration ON
+cd indicsense-website-2
+sed -i 's/"isRegistrationOpen": false/"isRegistrationOpen": true/' src/data/samagam.json
+sed -i 's/"registrationFormUrl": ""/"registrationFormUrl": "https://your-form-url.com"/' src/data/samagam.json
+
+# Upload guidelines
+cat >> src/data/samagam.json << 'EOF'
+  "isGuidelinesUploaded": true,
+  "guidelinesPdfUrl": "https://your-guidelines-url.com.pdf"
+EOF
 ```
+
+### Behavior (same for every event slug: samagam, sangam, virasat)
+
+| State | Condition | Result |
+|---|---|---|
+| Registration open | `isRegistrationOpen: true` + valid URL | "Register Now" opens the form in a new tab |
+| Registration closed | `isRegistrationOpen: false` or missing URL | Modal: "Registration is currently closed" |
+| Guidelines uploaded | `isGuidelinesUploaded: true` + valid URL | "Guidelines" opens the PDF in a new tab |
+| Guidelines not ready | `isGuidelinesUploaded: false` or missing URL | Modal: "Guidelines are not yet uploaded" |
+
+"Event Gallery" and "Guidelines" buttons continue to work as before when registration is open. No standard browser alerts are used, only the custom modal.
+
 
 ## Design notes
 
