@@ -72,16 +72,20 @@ const fullTitle = title === site.name ? `${site.name} · ${site.institution}` : 
         const modalClose = document.getElementById('modal-close');
         const modalConfirm = document.getElementById('modal-confirm');
 
-        function showModal(title, message) {
-          modalTitle.textContent = title;
-          modalContent.innerHTML = message;
-          modal.classList.remove('hidden');
-          modal.setAttribute('aria-hidden', 'true');
+        function showModal(title: string, message: string) {
+          if (modalTitle) modalTitle.textContent = title;
+          if (modalContent) modalContent.innerHTML = message;
+          if (modal) {
+            modal.classList.remove('hidden');
+            modal.setAttribute('aria-hidden', 'false');
+          }
         }
 
         function hideModal() {
-          modal.classList.add('hidden');
-          modal.setAttribute('aria-hidden', 'false');
+          if (modal) {
+            modal.classList.add('hidden');
+            modal.setAttribute('aria-hidden', 'true');
+          }
         }
 
         if (registerBtn) {
@@ -114,17 +118,17 @@ const fullTitle = title === site.name ? `${site.name} · ${site.institution}` : 
           });
         }
 
-        modalClose.addEventListener('click', hideModal);
-        modalConfirm.addEventListener('click', hideModal);
+        modalClose?.addEventListener('click', hideModal);
+        modalConfirm?.addEventListener('click', hideModal);
         
-        modal.addEventListener('click', function(e) {
+        modal?.addEventListener('click', function(e) {
           if (e.target === modal) {
             hideModal();
           }
         });
         
         document.addEventListener('keydown', function(e) {
-          if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+          if (e.key === 'Escape' && modal && !modal.classList.contains('hidden')) {
             hideModal();
           }
         });

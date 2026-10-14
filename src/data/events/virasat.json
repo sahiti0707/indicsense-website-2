@@ -16,8 +16,8 @@
     "status": "Upcoming"
   },
   "isSangam": false,
-  "isRegistrationOpen": false,
-  "registrationFormUrl": "",
+  "isRegistrationOpen": true,
+  "registrationFormUrl": "https://forms.gle/LcYz4aiNycxJYCZ68",
   "isGuidelinesUploaded": false,
   "guidelinesPdfUrl": ""
 }

@@ -44,7 +44,7 @@ export async function fetchMediumArticles(limit = 12): Promise<MediumArticle[]> 
   try {
     const feed = await parser.parseURL(FEED_URL);
     return (feed.items || []).slice(0, limit).map((item) => {
-      const raw = item as Record<string, unknown>;
+      const raw = item as unknown as Record<string, unknown>;
       const snippet = stripHtml(
         (item.contentSnippet || item.content || "") as string
       ).slice(0, 220);

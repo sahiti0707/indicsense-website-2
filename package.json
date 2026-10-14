@@ -13,6 +13,7 @@
     "sync-gallery": "node scripts/sync-gallery.js"
   },
   "dependencies": {
+    "@astrojs/check": "^0.9.10",
     "@astrojs/react": "^5.0.7",
     "@portabletext/types": "^4.0.2",
     "@sanity/client": "^7.24.0",
@@ -26,7 +27,8 @@
     "react-dom": "^19.3.0",
     "rss-parser": "^3.13.0",
     "sanity": "^5.14.1",
-    "tailwindcss": "^4.3.3"
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.9.3"
   },
   "devDependencies": {
     "@types/node": "^26.6.5"

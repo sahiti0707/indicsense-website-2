@@ -1,6 +1,25 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import teams from "../data/team.json";
+import teamsData from "../data/team.json";
+
+interface Sevak {
+  name: string;
+  image: string;
+  bio: string;
+  role?: string;
+  linkedin?: string;
+  github?: string;
+  instagram?: string;
+  email?: string;
+}
+
+interface TeamGroup {
+  category: string;
+  tagline: string;
+  sevaks: Sevak[];
+}
+
+const teams = teamsData as TeamGroup[];
 ---
 
 <BaseLayout title="Sevaks" description="The IndicSense core team — sevaks of our digital gurukulam.">

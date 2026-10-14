@@ -47,12 +47,12 @@ export function getStaticPaths() {
 }
 
 const { event } = Astro.props as { event: EventData };
-
-const isRegistrationOpen = event.isRegistrationOpen ?? false;
-const registrationFormUrl = event.registrationFormUrl ?? "";
-
-const isGuidelinesUploaded = event.isGuidelinesUploaded ?? false;
-const guidelinesPdfUrl = event.guidelinesPdfUrl ?? "";
+const isRegistrationOpen = event?.isRegistrationOpen ?? false;
+const registrationFormUrl = event?.registrationFormUrl ?? "";
+const isGuidelinesUploaded = event?.isGuidelinesUploaded ?? false;
+const guidelinesPdfUrl = event?.guidelinesPdfUrl ?? "";
+const highlights = event?.highlights ?? [];
+const upcoming = event?.upcoming ?? { date: "TBA", venue: "TBA", status: "Upcoming" };
 ---
 
 <BaseLayout title={event.title} description={event.description}>
@@ -116,7 +116,7 @@ const guidelinesPdfUrl = event.guidelinesPdfUrl ?? "";
           </dt>
 
           <dd class="text-maroon-deep mt-1">
-            {event.upcoming.date}
+            {upcoming.date}
           </dd>
         </div>
 
@@ -126,7 +126,7 @@ const guidelinesPdfUrl = event.guidelinesPdfUrl ?? "";
           </dt>
 
           <dd class="text-maroon-deep mt-1">
-            {event.upcoming.venue}
+            {upcoming.venue}
           </dd>
         </div>
 
@@ -136,7 +136,7 @@ const guidelinesPdfUrl = event.guidelinesPdfUrl ?? "";
           </dt>
 
           <dd class="text-maroon-deep mt-1">
-            {event.upcoming.status}
+            {upcoming.status}
           </dd>
         </div>
 
@@ -151,7 +151,7 @@ const guidelinesPdfUrl = event.guidelinesPdfUrl ?? "";
       </p>
 
       <ul class="space-y-3">
-        {event.highlights.map((h) => (
+        {highlights.map((h) => (
           <li class="flex gap-3 text-stone">
             <span class="text-gold shrink-0">
               ◆
@@ -268,16 +268,16 @@ const guidelinesPdfUrl = event.guidelinesPdfUrl ?? "";
   const modalOk = document.getElementById("modal-ok");
 
   function openModal(title: string, message: string) {
-    modalTitle?.textContent = title;
-    modalMessage?.textContent = message;
+    if (modalTitle) modalTitle.textContent = title;
+    if (modalMessage) modalMessage.textContent = message;
     modal?.classList.remove("hidden");
     modal?.classList.add("flex");
     modalOk?.focus();
   }
 
   function closeModal() {
-    modal.classList.add("hidden");
-    modal.classList.remove("flex");
+    modal?.classList.add("hidden");
+    modal?.classList.remove("flex");
   }
 
   modalClose?.addEventListener("click", closeModal);
@@ -286,18 +286,15 @@ const guidelinesPdfUrl = event.guidelinesPdfUrl ?? "";
     if (e.target === modal) closeModal();
   });
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && !modal.classList.contains("hidden")) closeModal();
+    if (e.key === "Escape" && !modal?.classList.contains("hidden")) closeModal();
   });
 
 
   /* REGISTER NOW */
-  registerButton?.addEventListener("click", () => {
-    const isOpen =
-      registerButton.dataset.open === "true";
-
-    const url =
-      registerButton.dataset.url;
-
+  registerButton?.addEventListener("click", (event) => {
+    const target = event.currentTarget as HTMLElement | null;
+    const isOpen = target?.dataset.open === "true";
+    const url = target?.dataset.url;
 
     if (isOpen && url) {
       window.open(
